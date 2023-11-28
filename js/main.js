@@ -69,10 +69,10 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass('nav-sticky');
+        if ($(this).scrollTop() > 150) {
+            $('.navbar').addClass('nav-sticky animated slideInDown');
         } else {
-            $('.navbar').removeClass('nav-sticky');
+            $('.navbar').removeClass('nav-sticky animated slideInDown');
         }
     });
 
@@ -116,15 +116,16 @@
 
 
     // Case studies carousel
-    $("#testimonial-slider").owlCarousel({
-        autoplay: true,
+    var testowl = $("#testimonial-slider");
+    testowl.owlCarousel({
+        autoplay: false,
         smartSpeed: 1500,
         center: true,
-        dots: true,
-        loop: true,
+        dots: false,
+        loop: false,
         margin: 10,
-        nav: false,
-        navText: false,
+        nav: true,
+        navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
         responsiveClass: true,
         responsive: {
             0: {
@@ -140,6 +141,14 @@
                 items: 1
             }
         }
+    });
+
+    testowl.on('change.owl.carousel', function (event) {
+        var el = event.target;
+        $('.testimonial-content', el).addClass('animated fadeInRight delay-500ms')
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('.testimonial-content', el).removeClass('animated fadeInRight delay-500ms');
+            });
     });
 
 })(jQuery);
