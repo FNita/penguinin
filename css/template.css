@@ -347,6 +347,16 @@
     z-index: 2;
 }
 
+#solutions a .app-logo-wrapper {
+    width: 100%;
+    height: 120px;
+    transition: all 250ms ease-in-out;
+}
+
+#solutions a:hover .app-logo-wrapper {
+    background-color: var(--bs-primary-bg);
+}
+
 .a-bg {
     height: 128px;
     width: 128px;
