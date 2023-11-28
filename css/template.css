@@ -41,7 +41,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px rgba(61, 71, 80, .18);
 }
 
 .navbar .navbar-brand {
@@ -121,9 +121,25 @@
 
 /*** Intro ***/
 
+.theonewrapper {
+    background: rgb(243, 242, 233);
+    background: radial-gradient(circle at right center, rgba(255, 241, 210, 1) 0%, rgba(243, 242, 233, 1) 32%);
+}
+
 #intro .slider-wrapper {
-    height: calc(100vh - 80px);
-    margin-top: 80px !important;
+    height: 100vh;
+    padding-top: 80px !important;
+    background: rgb(243, 242, 233);
+    background: linear-gradient(175deg, rgba(212, 240, 253, 1) 0%, rgba(243, 242, 233, 1) 60%);
+}
+
+.gradienttrans {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: auto;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
 }
 
 #intro .owl-stage {
@@ -183,15 +199,9 @@
     background: var(--bs-primary);
 }
 
-.custom-gradient {
-    background: linear-gradient(135deg, #ECECEC, #FFFAA0);
-}
-
 #intro .item {
     height: 100%;
     padding: 50px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #ECECEC, #FFFAA0);
     height: calc(100vh - 120px);
 }
 
@@ -343,8 +353,8 @@
 
     z-index: 1 !important;
     position: absolute;
-    top: -75px;
-    right: -75px;
+    top: -150px;
+    right: -150px;
 
     border-radius: 50%;
 
@@ -355,7 +365,7 @@
 }
 
 .a-bg.onleft {
-    left: -75px;
+    left: -150px;
 }
 
 a:hover .a-bg {
@@ -772,31 +782,34 @@ h2 {
     border-radius: 12px !important;
 }
 
-.btn-primary:hover {
-    background-color: #ffffff;
-}
-
-.btn-primary:hover i {
-    animation: slideIn 250ms ease-in-out;
-}
-
 
 
 /*** Responsiveness ***/
 
+@media (min-width: 1400px) {
+    /*** Extra extra large  xxl ***/
+}
+
+@media (min-width: 1200px) {
+    /*** Extra large  xl ***/
+}
+
 @media (min-width: 992px) {
+
+    /*** Large  lg ***/
     .navbar {
-        position: fixed;
+        position: absolute;
         width: 100%;
         top: 0;
         padding: 20px;
-        background: rgba(0, 0, 0, 0) !important;
+        background-color: transparent !important;
         z-index: 9;
     }
 
     .navbar.nav-sticky {
         padding: 10px;
         background: #ffffff !important;
+        transition: all 250ms ease-in-out;
     }
 
     .navbar a.nav-link {
@@ -810,6 +823,14 @@ h2 {
         display: block;
         margin-top: 0;
     }
+}
+
+@media (min-width: 768px) {
+    /*** Medium	 md ***/
+}
+
+@media (min-width: 576px) {
+    /*** Small  sm ***/
 }
 
 @media (max-width: 991.98px) {
