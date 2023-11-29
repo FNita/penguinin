@@ -83,6 +83,8 @@
     mainOwl.owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
+        animateIn: 'fadeInDown',
+        animateOut: '',
         loop: true,
         nav: false,
         navText: false,
