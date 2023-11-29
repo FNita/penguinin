@@ -86,7 +86,7 @@
         loop: true,
         nav: false,
         navText: false,
-        dots: true,
+        dots: false,
         mouseDrag: true,
         margin: 10,
         navigation: true,

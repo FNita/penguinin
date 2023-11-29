@@ -230,6 +230,24 @@
 }
 
 
+/*** Statistics ***/
+
+#statistics strong {
+    font-size: 40px;
+    color: var(--bs-primary);
+}
+
+#statistics p {
+    font-size: 20px;
+    color: var(--bs-secondary);
+    line-height: 1.3;
+}
+
+#statistics p b {
+    font-size: 24px;
+}
+
+
 /*** Banner ***/
 
 .bg-pattern {
@@ -713,6 +731,7 @@ a button {
 #blog form .form-control-lg {
     font-size: 16px;
     height: 48px;
+    border-radius: 40px;
 }
 
 #blog form .form-text {
@@ -816,6 +835,9 @@ a button {
 #contact .input-group-text {
     background-color: #fff;
     border: 0;
+    width: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 
