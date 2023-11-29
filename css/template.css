@@ -614,7 +614,7 @@ a button {
 
 #product img.prod2 {
     top: -200px;
-    right: 0;
+    left: 100px;
     max-width: 350px;
 }
 
