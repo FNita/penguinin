@@ -269,8 +269,8 @@
 
     <div class="theonewrapper">
         <!-- Banner Start -->
-        <section class="container-fluid p-lg-5 p-3" id="banner">
-            <div class="container p-lg-5 p-3">
+        <section class="container-fluid py-5" id="banner">
+            <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="d-flex justify-content-center align-items-center p-4">
@@ -335,8 +335,8 @@
 
 
         <!-- Solutions Start -->
-        <section class="container-fluid p-md-5 p-3" id="solutions">
-            <div class="container p-md-5 p-3">
+        <section class="container-fluid py-5" id="solutions">
+            <div class="container py-5">
                 <h2 class="mb-5">
                     What we do
                     <br><span class="display-5"><span class="fw-bold">Technologies</span> powered by PenguinIN</span>
@@ -435,7 +435,7 @@
 
     <!-- Industries Start -->
     <section class="container-fluid py-5" id="industries">
-        <div class="container p-xl-5 p-3">
+        <div class="container py-5">
             <h2 class="mb-5">
                 Who we serve
                 <br><span class="display-5">Check out our <span class="fw-bold">applications</span></span>
@@ -501,16 +501,16 @@
     <!-- Industries End -->
 
     <!-- Case Studies Start -->
-    <section class="container-fluid bg-secondary-light p-lg-5 p-3" id="cases">
-        <div class="container p-lg-5 p-3">
-            <h2 class="mb-3 px-3">
+    <section class="container-fluid bg-secondary-light py-5" id="cases">
+        <div class="container py-5">
+            <h2 class="mb-5">
                 Case studies
                 <br><span class="display-5">Stories of <span class="fw-bold">success</span></span>
             </h2>
             <div id="testimonial-slider" class="owl-carousel">
                 <div class="testimonial position-relative row bg-secondary-light">
                     <div class="testimonial-content col-lg-5 d-flex align-items-center">
-                        <div class="p-3">
+                        <div class="">
                             <div class="text-start mb-3">
                                 <img src="img/logoipsum-325.svg" alt="" height="30" style="width: auto !important;">
                             </div>
@@ -648,8 +648,8 @@
     <!-- Case Studies End -->
 
     <!-- Product Start -->
-    <section class="container-fluid p-lg-5 p-3" id="product">
-        <div class="container p-lg-5 p-3">
+    <section class="container-fluid py-5" id="product">
+        <div class="container py-5">
             <h2 class="mb-5 wow fadeInUp">
                 Try it yourself
                 <br><span class="display-5">See how it <span class="fw-bold">works</span></span>
@@ -692,9 +692,9 @@
 
     <!-- Partners Start -->
     <section class="container-fluid bg-primary-light py-5" id="partners">
-        <div class="container">
+        <div class="container py-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="mb-3 px-3">
+                <h2 class="mb-3">
                     They trust us
                     <br><span class="display-5">Our ecosystem <span class="fw-bold">partners</span></span>
                 </h2>
@@ -888,7 +888,7 @@
 
     <!-- Calculate Start -->
     <section class="container-fluid py-5" id="calculate">
-        <div class="container pt-5">
+        <div class="container py-5">
             <h2 class="mb-5">
                 Our calculator
                 <br><span class="display-5">Calculate your <span class="fw-bold">ROI</span></span>
@@ -929,9 +929,14 @@
 
 
     <!-- Contact Start -->
-    <section class="container-fluid bg-secondary-light p-md-5 p-3" id="contact">
-        <div class="container p-md-5 px-3 py-4">
-            <h2 class="mb-3">
+    <section class="container-fluid bg-secondary-light py-5" id="contact">
+        <div class="container py-5">
+            <div class="position-relative" style="height: 28px;">
+                <div class="dotted-line horizontal" style="left: 266px; height: 560px; top: -266px;"></div>
+                <div class="dotted-line arrow-top" style="left: 546px; top: 14px; animation-delay: 1000ms;">
+                </div>
+            </div>
+            <h2 class="mb-3 position-relative">
                 Contact us
                 <br><span class="display-5">Get in <span class="fw-bold">touch</span></span>
             </h2>
@@ -997,6 +1002,60 @@
         </div>
     </section>
     <!-- Contact End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+    <script>
+        gsap.to(".dotted-path", {
+            strokeDashoffset: -390,
+            repeat: -1,
+            ease: "none",
+            duration: 3
+        });
+    </script>
+
+
+    <style>
+        #svgarrow {
+            width: 400px;
+            height: auto;
+            position: absolute;
+        }
+
+        #base-path {
+            fill: none;
+            stroke: lightgrey;
+            stroke-miterlimit: 10;
+            opacity: 0.15;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dotted-path {
+            stroke-dasharray: 10px 20px;
+            fill: none;
+            stroke: orange;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dotted-path-base {
+            stroke-width: 8px;
+            opacity: 0.15;
+        }
+
+        .dotted-path-middle {
+            stroke-width: 4px;
+            opacity: 0.5;
+        }
+
+        .dotted-path-upper {
+            stroke-width: 2px;
+        }
+    </style>
+
 
     <!-- Footer Start -->
     <section class="container-fluid footer bg-secondary p-md-5 p-3" id="footer">
