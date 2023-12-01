@@ -96,13 +96,12 @@ body {
 .btn-primary-hollow {
     --bs-btn-color: var(--bs-primary-color);
     --bs-btn-bg: rgba(0, 0, 0, 0);
-    ;
     --bs-btn-border-color: var(--bs-primary-color);
-    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-color: var(--bs-white) !important;
     --bs-btn-hover-bg: var(--bs-primary);
     --bs-btn-hover-border-color: var(--bs-primary);
     --bs-btn-focus-shadow-rgb: 130, 138, 145;
-    --bs-btn-active-color: #fff;
+    --bs-btn-active-color: var(--bs-primary-color);
     --bs-btn-active-bg: var(--bs-primary-color);
     --bs-btn-active-border-color: var(--bs-primary-color);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
