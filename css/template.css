@@ -19,6 +19,8 @@
 .navbar .dropdown-menu {
     background-color: #fff !important;
     border-radius: 12px !important;
+    left: 0;
+    top: 100%;
 }
 
 .dropdown-item {
