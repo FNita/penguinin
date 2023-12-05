@@ -157,6 +157,16 @@
     // Mega menu items switch
 
     $(document).ready(function () {
+        $(".dropdown").on("mouseover", function () {
+            $(this).find('.dropdown-menu').addClass('show');
+            $(this).find('.nav-link').addClass('show');
+            $(this).find('.nav-link').attr('aria-expanded', true);
+        });
+        $(".dropdown").on("mouseout", function () {
+            $(this).find('.dropdown-menu').removeClass('show');
+            $(this).find('.nav-link').removeClass('show');
+            $(this).find('.nav-link').attr('aria-expanded', false);
+        });
         $('.penitem').on('mouseover', function (e) {
             e.preventDefault();
 
