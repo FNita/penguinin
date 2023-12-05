@@ -74,7 +74,7 @@
 
     <!-- Navbar Start -->
     <section class="navbar navbar-expand-lg" id="navbar">
-        <div class="container position-relative">
+        <div class="container">
             <a href="index.html" class="navbar-brand">
                 <img src="img/logo.webp" alt="">
             </a>
@@ -83,35 +83,54 @@
             </button>
 
             <nav class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav align-items-center position-relative">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link text-center" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Solutions
                             <i class="fa-solid fa-chevron-down ms-1"></i>
                         </a>
-                        <ul class="dropdown-menu shadow p-5" style="left: 0;">
-                            <div class="row">
-                                <div class="col-4">
-                                    <li><a class="dropdown-item penitem" data-menutarget="pentrack" href="#"
-                                            style="height: 200px;">PenTrack</a>
+                        <ul class="dropdown-menu shadow p-4">
+                            <div class="d-flex">
+                                <div class="">
+                                    <li>
+                                        <a class="dropdown-item penitem active d-flex align-items-center rounded-lg p-3"
+                                            data-menutarget="pentrack" href="#">
+                                            <div>
+                                                <h5>PenTrack</h5>
+                                                RTLS<br>Solutions
+                                            </div>
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item penitem" data-menutarget="pensafe" href="#"
-                                            style="height: 200px;">PenSafe</a>
+                                    <li>
+                                        <a class="dropdown-item penitem d-flex align-items-center rounded-lg p-3"
+                                            data-menutarget="pensafe" href="#">
+                                            <div>
+                                                <h5>PenSafe</h5>
+                                                Safety<br>Solutions
+                                            </div>
+                                        </a>
                                     </li>
-                                    <li><a class="dropdown-item penitem" data-menutarget="pennav" href="#"
-                                            style="height: 200px;">PenNav</a></li>
+                                    <li>
+                                        <a class="dropdown-item penitem d-flex align-items-center rounded-lg p-3"
+                                            data-menutarget="pennav" href="#">
+                                            <div>
+                                                <h5>PenNav</h5>
+                                                Navigation<br>Solutions
+                                            </div>
+                                        </a>
+                                    </li>
                                 </div>
-                                <div class="col-8">
+                                <div class="ms-3 p-3">
                                     <div class="pentrack penmenu">
                                         <a href="#" class="text-secondary">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/leadership.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Flow - Workflow and Staff Locating:</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         An all revolving solutions for people locating, tracking
                                                         visitors,
                                                         staff
@@ -119,13 +138,13 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/location.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Asset Tracking:</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Track all vital assets in facilities to utilize usage, minimize
                                                         loss,
                                                         and
@@ -133,13 +152,13 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/manager.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Attendance automation:</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Fully digitize staffing procedures. A more sustainable solutions
                                                         with
                                                         10x
@@ -148,14 +167,15 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <br><br>
-                                        <a href="#">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
-                                                </div>
-                                                <div class="col-9">
+
+                                        <a href="#" class="text-primary">
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 40px;" class="me-4"></div>
+                                                <div class="">
                                                     Learn more about our technology
+                                                </div>
+                                                <div class="ms-3">
+                                                    <i class="fa-solid fa-chevron-right"></i>
                                                 </div>
                                             </div>
                                         </a>
@@ -164,55 +184,55 @@
 
                                     <div class="pensafe penmenu penhide">
                                         <a href="#" class="text-secondary">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/exit.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Staff Duress Pro - Workforce Saftey
                                                     </h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Call automation for better operations, improving emergency
                                                         response
                                                         and leveraging safety procedures.
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/baby-safety.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Infant Protection:
                                                     </h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Track infants in the (NICU) with comfortable tag bracelets,
                                                         fully
                                                         equipped with alert systems to prevent abduction.
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/old-people.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>PenWander - Wander Prevention:</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Monitor patients and scenarios in hospitals to prevent elopement
                                                         and
                                                         minimize accidents.
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/safe.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Hand Hygiene Complaince - Infection Control Solutions:
                                                     </h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Ensure hospital hand hygiene compliance for infection control
                                                         and
                                                         trace movements for effective quarantine response.
@@ -220,14 +240,15 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <br><br>
-                                        <a href="#">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
-                                                </div>
-                                                <div class="col-9">
+
+                                        <a href="#" class="text-primary">
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 40px;" class="me-4"></div>
+                                                <div class="">
                                                     Learn more about our technology
+                                                </div>
+                                                <div class="ms-3">
+                                                    <i class="fa-solid fa-chevron-right"></i>
                                                 </div>
                                             </div>
                                         </a>
@@ -236,13 +257,13 @@
 
                                     <div class="pennav penmenu penhide">
                                         <a href="#" class="text-secondary">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/mobile-development.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>Pennav Pro (plug n play):</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Mobile navigation (Turn-by-turn for the indoors)
 
                                                         Plug & Play Modules (stand-alone apps or integration with
@@ -251,13 +272,13 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    icon
+                                            <div class="d-flex mb-4">
+                                                <div class="me-4">
+                                                    <img src="img/icons/kiosk.png" alt="" height="40">
                                                 </div>
-                                                <div class="col-9">
+                                                <div class="">
                                                     <h5>PenNav Lite</h5>
-                                                    <p>
+                                                    <p class="mb-0">
                                                         Stationed digital helpdesk
 
                                                         User friendly interface

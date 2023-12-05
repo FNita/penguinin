@@ -157,7 +157,7 @@
     // Mega menu items switch
 
     $(document).ready(function () {
-        $('.penitem').on('click', function (e) {
+        $('.penitem').on('mouseover', function (e) {
             e.preventDefault();
 
             $('.penitem').removeClass('active');
