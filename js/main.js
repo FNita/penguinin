@@ -153,5 +153,21 @@
             });
     });
 
+
+    // Mega menu items switch
+
+    $(document).ready(function () {
+        $('.penitem').on('click', function (e) {
+            e.preventDefault();
+
+            $('.penitem').removeClass('active');
+            $(this).addClass('active');
+
+            $('.penmenu').addClass('penhide');
+            var targetclass = $(this).data("menutarget");
+            $('.' + targetclass).removeClass('penhide');
+        });
+    });
+
 })(jQuery);
 
