@@ -291,7 +291,7 @@
     display: block;
     margin: 0;
     padding-bottom: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 500;
     transition: transform .4s ease;
@@ -1232,13 +1232,13 @@ h2 {
     .videowrapper {
         position: absolute;
         top: 18vh;
-        left: 20vw;
+        left: 25vw;
     }
 
     .video {
         position: absolute;
         top: 0;
-        height: 70vh;
+        height: 75vh;
         width: auto;
     }
 }
@@ -1247,7 +1247,7 @@ h2 {
 
     /*** Extra large  xl ***/
     .videowrapper {
-        left: 30vw;
+        left: 27vw;
     }
 
     .navbar .navbar-brand img {
