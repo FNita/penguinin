@@ -1226,7 +1226,10 @@ h2 {
 
     .navbar.nav-sticky {
         padding: 10px;
+        background: #ffffff !important;
+        /*
         background: #fffff5 !important;
+        */
         transition: all 250ms ease-in-out;
     }
 
