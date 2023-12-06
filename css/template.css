@@ -306,7 +306,7 @@
     transform: rotate(0deg);
 }
 
-a:hover .link-container {
+.btn:hover .link-container {
     transform: translateY(-30px);
     transition: transform .4s ease;
 }
@@ -649,14 +649,13 @@ a button {
 }
 
 .testimonial .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--bs-secondary);
     margin: 0;
 }
 
 .testimonial .description {
-    font-size: 18px;
     color: var(--bs-secondary);
     margin: 0;
     position: relative;
@@ -743,19 +742,19 @@ a button {
 #product img.prod1 {
     bottom: 0;
     left: 0;
-    max-width: 120px;
+    max-width: 100px;
 }
 
 #product img.prod2 {
     bottom: 0;
     right: 0;
-    max-width: 260px;
+    max-width: 230px;
 }
 
 #product img.prod3 {
     top: 0;
     left: calc(50% - 160px);
-    max-width: 320px;
+    max-width: 280px;
 }
 
 #product img.prod4 {
@@ -868,13 +867,8 @@ a button {
     visibility: visible;
 }
 
-#blog form button {
-    height: 48px;
-}
-
 #blog form .form-control-lg {
-    font-size: 16px;
-    height: 48px;
+    font-size: 14px;
     border-radius: 40px;
 }
 
@@ -977,11 +971,11 @@ a button {
 /*** Contact ***/
 
 #contact .form-control {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #contact input.form-control {
-    height: 60px;
+    height: 44px;
     border: 0;
 }
 
