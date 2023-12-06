@@ -57,7 +57,7 @@
     box-shadow: 0 2px 5px rgba(61, 71, 80, .18);
 }
 
-.navbar.nav-sticky img {
+.navbar.nav-sticky .navbar-brand img {
     height: 50px !important;
 }
 
@@ -991,11 +991,13 @@ a button {
 .footer .help-link a,
 .footer .contact-link a {
     transition: .5s;
+    font-size: 14px;
 }
 
 .footer .short-link a:hover,
 .footer .help-link a:hover,
-.footer .contact-link a:hover {
+.footer .contact-link a:hover,
+#copyright a:hover {
     color: var(--bs-primary) !important;
 }
 
