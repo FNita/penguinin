@@ -236,20 +236,16 @@
 /*** Intro ***/
 
 .theonewrapper {
-    /*
     background: rgb(243, 242, 233);
     background: radial-gradient(circle at right center, rgba(255, 241, 210, 1) 0%, rgba(243, 242, 233, 1) 32%);
-    */
 }
 
 #intro .slider-wrapper {
     height: 100vh;
     padding-top: 160px !important;
     overflow: hidden;
-    /*
     background: rgb(243, 242, 233);
     background: linear-gradient(175deg, rgba(255, 241, 210, 1) 0%, rgba(243, 242, 233, 1) 60%);
-    */
 }
 
 .gradienttrans {
@@ -540,10 +536,8 @@ a button {
 }
 
 #industries {
-    /*
     background: rgb(243, 242, 233);
     background: linear-gradient(180deg, rgba(243, 242, 233, 1) 0%, rgba(255, 255, 255, 1) 30%);
-    */
 }
 
 #industries * {
@@ -725,11 +719,9 @@ a button {
 /*** Product ***/
 
 #product {
-    /*
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(243, 242, 233, 1) 90%);
     overflow: hidden;
-    */
 }
 
 #product img {
@@ -803,10 +795,8 @@ a button {
 /*** Blog ***/
 
 #blog {
-    /*
     background: rgb(243, 242, 233);
     background: linear-gradient(180deg, rgb(243, 242, 233) 0%, rgba(255, 255, 255, 1) 90%);
-    */
 }
 
 #blog img {
@@ -890,10 +880,8 @@ a button {
 
 /*** Calculate ***/
 #calculate {
-    /*
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(236, 236, 236, 1) 60%);
-    */
 }
 
 #calculate .container {
@@ -1226,10 +1214,7 @@ h2 {
 
     .navbar.nav-sticky {
         padding: 10px;
-        background: #ffffff !important;
-        /*
         background: #fffff5 !important;
-        */
         transition: all 250ms ease-in-out;
     }
 
