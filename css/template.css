@@ -901,6 +901,7 @@ a button {
     z-index: 2;
     position: relative;
     border-radius: 30px;
+    max-width: 900px;
 }
 
 /***
