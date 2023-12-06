@@ -161,6 +161,13 @@
             $(this).find('.dropdown-menu').addClass('show');
             $(this).find('.nav-link').addClass('show');
             $(this).find('.nav-link').attr('aria-expanded', true);
+            if (!$('.penitem').hasClass('active')) {
+                $('.penitem.firstitem').addClass('active');
+            }
+            if (!$('.penmenu').hasClass('active')) {
+                $('.penmenu.firstitem').addClass('active');
+            }
+
         });
         $(".dropdown").on("mouseout", function () {
             $(this).find('.dropdown-menu').removeClass('show');
