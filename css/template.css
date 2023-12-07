@@ -245,7 +245,7 @@
     padding-top: 160px !important;
     overflow: hidden;
     background: rgb(243, 242, 233);
-    background: linear-gradient(175deg, rgba(255, 241, 210, 1) 0%, rgba(243, 242, 233, 1) 60%);
+    background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(243, 242, 233, 1) 60%);
 }
 
 .gradienttrans {
@@ -264,8 +264,6 @@
 
 .videowrapper {
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .video {
@@ -562,7 +560,7 @@ a button {
 #industries a p {
     position: absolute;
     top: 35px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
     height: 0;
     visibility: hidden;
@@ -767,7 +765,7 @@ a button {
 /*** Partners ***/
 
 #partners .partners-list a {
-    aspect-ratio: 4 / 2;
+    aspect-ratio: 5 / 2;
     border-radius: 12px;
     background-color: #fffff5;
     transition: all 250ms ease-in-out;
@@ -1222,7 +1220,7 @@ h2 {
 
     .navbar.nav-sticky {
         padding: 10px;
-        background: #fffff5 !important;
+        background: #ffffff !important;
         transition: all 250ms ease-in-out;
     }
 
@@ -1234,29 +1232,29 @@ h2 {
     }
 
     .textwrapper {
-        min-height: calc(100vh - 320px);
+        min-height: calc(100vh - 160px);
+        top: -60px;
     }
 
-    .videowrapper {
-        position: absolute;
-        top: 18vh;
-        left: 25vw;
-    }
+    .videowrapper {}
 
     .video {
-        position: absolute;
-        top: 0;
-        height: 75vh;
+        height: 73vh;
         width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
 
 @media (min-width: 1200px) {
 
     /*** Extra large  xl ***/
-    .videowrapper {
-        left: 27vw;
-    }
+    .videowrapper {}
 
     .navbar .navbar-brand img {
         height: 80px;
@@ -1266,9 +1264,7 @@ h2 {
 @media (min-width: 1400px) {
 
     /*** Extra extra large  xxl ***/
-    .videowrapper {
-        left: 35vw;
-    }
+    .videowrapper {}
 }
 
 @media (max-width: 991.98px) {
