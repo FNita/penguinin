@@ -766,7 +766,9 @@ a button {
 
 #partners {
     background: rgb(243, 242, 233);
+    /*** 
     background: linear-gradient(180deg, rgb(243, 242, 233) 0%, rgba(236, 236, 236, 1) 90%);
+    ***/
 }
 
 #partners .partners-list a {
@@ -897,7 +899,6 @@ a button {
 }
 
 #calculate .container {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     z-index: 2;
     position: relative;
     border-radius: 30px;
