@@ -287,7 +287,7 @@
                                                     <img src="img/icons/mobile-development.png" alt="" height="32">
                                                 </div>
                                                 <div class="">
-                                                    <h6>Pennav Pro (plug n play):</h6>
+                                                    <h6>PenNav Pro (plug n play):</h6>
                                                     <p class="mb-0 fs-14">
                                                         Mobile navigation (Turn-by-turn for the indoors)
 
@@ -1377,33 +1377,49 @@
                     <form method="POST" id="contactForm" name="contactForm" class="contactForm position-relative"
                         novalidate="novalidate" style="z-index: 1;">
 
-                        <div class="input-group input-group-lg mb-3 wow fadeInUp">
-                            <span class="input-group-text" id="name-icon">
-                                <i class="fa-regular fa-user"></i>
-                            </span>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="First Name"
-                                aria-label="First Name" aria-describedby="name-icon" autocomplete="off">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group input-group-lg mb-3 wow fadeInUp">
+                                    <span class="input-group-text" id="name-icon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="First Name" aria-label="First Name" aria-describedby="name-icon"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group input-group-lg mb-3 wow fadeInUp">
+                                    <span class="input-group-text" id="lname-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" name="lname" id="lname"
+                                        placeholder="Last Name" aria-label="Last Name" aria-describedby="lname-icon"
+                                        autocomplete="off">
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-group input-group-lg mb-3 wow fadeInUp">
-                            <span class="input-group-text" id="lname-icon">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name"
-                                aria-label="Last Name" aria-describedby="lname-icon" autocomplete="off">
-                        </div>
-                        <div class="input-group input-group-lg mb-3 wow fadeInUp">
-                            <span class="input-group-text" id="company-icon">
-                                <i class="fa-regular fa-building"></i>
-                            </span>
-                            <input type="text" class="form-control" name="company" id="company" placeholder="Company"
-                                aria-label="Company" aria-describedby="company-icon" autocomplete="off">
-                        </div>
-                        <div class="input-group input-group-lg mb-3 wow fadeInUp">
-                            <span class="input-group-text" id="phone-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </span>
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
-                                aria-label="Phone number" aria-describedby="phone-icon" autocomplete="off">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group input-group-lg mb-3 wow fadeInUp">
+                                    <span class="input-group-text" id="company-icon">
+                                        <i class="fa-regular fa-building"></i>
+                                    </span>
+                                    <input type="text" class="form-control" name="company" id="company"
+                                        placeholder="Company" aria-label="Company" aria-describedby="company-icon"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group input-group-lg mb-3 wow fadeInUp">
+                                    <span class="input-group-text" id="phone-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        placeholder="Phone Number" aria-label="Phone number"
+                                        aria-describedby="phone-icon" autocomplete="off">
+                                </div>
+                            </div>
                         </div>
                         <div class="input-group input-group-lg mb-3 wow fadeInUp">
                             <span class="input-group-text" id="email-icon">
@@ -1416,7 +1432,13 @@
                             <textarea name="message" class="form-control" id="message" cols="30" rows="5"
                                 placeholder="Message"></textarea>
                         </div>
-                        <div class="col-md-12 text-left mt-3 wow fadeInUp">
+
+                        <div class="d-flex py-3 wow fadeInUp">
+                            <input type="checkbox" id="marketingcheck" name="marketingcheck" value="Agree">
+                            <label for="marketingcheck" class="ms-3">I want to receive emails on latest news, updates,
+                                and marketing communications from PenguinIN, Inc.</label>
+                        </div>
+                        <div class="col-md-12 text-left mt-1 wow fadeInUp">
                             <button type="submit"
                                 class="btn btn-primary text-secondary fs-14 fw-normal rounded-pill py-2 px-4">
                                 <i class="fa-regular fa-paper-plane fa-lg me-3"></i>
