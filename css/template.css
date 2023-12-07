@@ -547,7 +547,7 @@ a button {
 
 #industries {
     background: rgb(243, 242, 233);
-    background: linear-gradient(180deg, rgba(243, 242, 233, 1) 0%, rgba(255, 255, 255, 1) 30%);
+    background: linear-gradient(180deg, rgba(243, 242, 233, 1) 0%, rgba(255, 255, 255, 1) 15%);
 }
 
 #industries * {
