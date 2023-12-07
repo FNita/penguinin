@@ -813,8 +813,10 @@ a button {
 /*** Blog ***/
 
 #blog {
-    background: rgb(243, 242, 233);
+    background-color: #ffffff;
+    /***
     background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgba(255, 255, 255, 1) 90%);
+    ***/
 }
 
 #blog img {
