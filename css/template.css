@@ -764,6 +764,11 @@ a button {
 
 /*** Partners ***/
 
+#partners {
+    background: rgb(243, 242, 233);
+    background: linear-gradient(180deg, rgb(243, 242, 233) 0%, rgba(236, 236, 236, 1) 90%);
+}
+
 #partners .partners-list a {
     aspect-ratio: 5 / 2;
     border-radius: 0;
@@ -807,7 +812,7 @@ a button {
 
 #blog {
     background: rgb(243, 242, 233);
-    background: linear-gradient(180deg, rgb(243, 242, 233) 0%, rgba(255, 255, 255, 1) 90%);
+    background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgba(255, 255, 255, 1) 90%);
 }
 
 #blog img {
