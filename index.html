@@ -828,18 +828,15 @@
                     <style>
                         .line2-wrapper {
                             position: absolute;
+                            width: 90px;
+                            height: 605px;
+                            left: -20px;
+                            top: 60px;
                         }
 
                         #mySVG2 {
                             width: 100%;
                             height: auto;
-                        }
-
-                        .line2-wrapper {
-                            width: 90px;
-                            height: 605px;
-                            left: -20px;
-                            top: 60px;
                         }
                     </style>
 
@@ -1664,26 +1661,39 @@
                     </h6>
 
                     <div class="line3-wrapper">
-                        <svg id="mySVG3" viewBox="0 0 7 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="line3"
-                                d="M3.49903 0L3.49885 56.0815M3.49885 56.0815C3.49885 56.0815 2.49886 56 1.79899 56.5823C0.847322 57.374 1.06006 59.4469 1.99889 60C2.93772 60.5531 4.06006 60.5531 4.99889 60C5.93772 59.4469 6 57 4.99878 56.5C3.99756 56 3.49885 56.0815 3.49885 56.0815Z"
-                                stroke="black" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 57" id="mySVG3">
+                            <path id="line3" d="M1.31738 0L1.3172 56.0815" stroke="black" />
                         </svg>
-
+                        <div id="dot"></div>
                     </div>
+
 
                     <style>
                         .line3-wrapper {
                             position: absolute;
-                            width: 7px;
-                            height: 61px;
+                            width: 4px;
+                            height: 100px;
                             left: 100px;
-                            top: -80px;
+                            top: -120px;
                         }
 
                         #mySVG3 {
                             width: 100%;
                             height: auto;
+                            overflow: visible;
+                        }
+
+                        #dot {
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 12px;
+                            opacity: 1;
+                            position: absolute;
+                            bottom: -15px;
+                            left: -3px;
+                            background-color: black;
+                            z-index: 3;
+                            transition: opacity 200ms ease-in-out;
                         }
                     </style>
 
@@ -1691,8 +1701,6 @@
                         // Get the id of the <path> element and the length of <path>
                         var line3 = document.getElementById("line3");
                         var length3 = line3.getTotalLength();
-
-                        var end3 = document.getElementById("end3");
 
                         // The start position of the drawing
                         line3.style.strokeDasharray = length3;
@@ -1704,9 +1712,19 @@
                         window.addEventListener("scroll", myFunction3);
 
                         function myFunction3() {
-                            var scrollpercent3 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 7.3;
+                            var scrollpercent3 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 10;
 
                             var draw3 = length3 * scrollpercent3;
+
+                            var scrollpercentage = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+                            var pt = line3.getPointAtLength(scrollpercentage * length3);
+                            console.log(pt);
+                            var dot = document.getElementById("dot");
+                            if (pt.y > 50) {
+                                dot.style.opacity = "1";
+                            } else {
+                                dot.style.opacity = "0";
+                            }
 
                             // Reverse the drawing (when scrolling upwards)
                             line3.style.strokeDashoffset = length3 - draw3;
