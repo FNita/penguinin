@@ -468,7 +468,7 @@
         <div class="slider-wrapper position-relative px-xl-5 px-4">
             <div class="container">
                 <div class="textwrapper row align-items-center">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 ps-0 pe-5">
                         <h2 class="fw-bold text-left mb-3 wow fadeInUp" style="font-size: 26px;">
                             The leading provider of applicable location services.
                         </h2>
@@ -478,7 +478,8 @@
                                 class="fw-bold">Simplified</span>.
                         </p>
                         <div class="mt-5">
-                            <a href="#" class="btn btn-primary text-secondary py-2 px-4 me-3 rounded-pill wow fadeInUp"
+                            <a href="#"
+                                class="btn btn-primary text-secondary py-2 px-4 me-3 mb-3 rounded-pill wow fadeInUp"
                                 data-wow-delay="0.4s">
                                 <div class="title-mask">
                                     <div class="link-container text-secondary">
@@ -488,7 +489,7 @@
                                 </div>
                                 <i class="fa-solid fa-chevron-right ms-3"></i>
                             </a>
-                            <a href="#" class="btn btn-secondary text-white py-2 px-4 rounded-pill wow fadeInUp"
+                            <a href="#" class="btn btn-secondary text-white py-2 px-4 mb-3 rounded-pill wow fadeInUp"
                                 data-wow-delay="0.6s">
                                 <i class="fa-solid fa-calculator fa-lg me-2"></i>
                                 <div class="title-mask">
@@ -500,12 +501,127 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="videowrapper animated fadeIn">
-                            <video autoplay loop muted class="video mask">
+                    <div class="col-lg-7 p-0 position-relative">
+                        <div class="animated fadeIn">
+                            <video autoplay loop muted class="w-100 rounded">
                                 <source src="img/video.mp4" type="video/mp4">
                             </video>
                         </div>
+
+                        <div class="svg-wrapper">
+                            <svg id="mySVG" fill="none" viewBox="0 0 960 353" xmlns="http://www.w3.org/2000/svg">
+                                <path id="line"
+                                    d="M957.156 0.685355L958.614 60.1154L1.11414 58.5107L1.11411 317.5L91 317.5L91 352.5"
+                                    stroke="#000000" />
+                            </svg>
+                        </div>
+
+                        <style>
+                            .svg-wrapper {
+                                position: absolute;
+                                top: 100%;
+                                z-index: -1;
+                            }
+
+                            #mySVG {
+                                width: 100%;
+                                height: auto;
+                            }
+
+                            @media (min-width: 992px) {
+                                .svg-wrapper {
+                                    width: 700px;
+                                    height: auto;
+                                    right: 50%;
+                                    margin-top: 0;
+                                }
+
+                                .stats-row {
+                                    height: 120px;
+                                }
+
+                                .stats-row h4 {
+                                    font-size: 1.2rem;
+                                }
+
+                                #statistics strong {
+                                    font-size: 24px;
+                                }
+
+                                #statistics p {
+                                    font-size: 14px;
+                                    line-height: 1.2;
+                                }
+                            }
+
+                            @media (min-width: 1200px) {
+                                .svg-wrapper {
+                                    width: 830px;
+                                    height: auto;
+                                    right: 50%;
+                                    margin-top: 0;
+                                }
+
+                                .stats-row {
+                                    height: 140px;
+                                }
+
+                                .stats-row h4 {
+                                    font-size: 1.2rem;
+                                }
+
+                                #statistics strong {
+                                    font-size: 32px;
+                                }
+
+                                #statistics p {
+                                    font-size: 16px;
+                                    line-height: 1.3;
+                                }
+                            }
+
+                            @media (min-width: 1400px) {
+                                .svg-wrapper {
+                                    width: 970px;
+                                    height: 1000px;
+                                    right: 50%;
+                                    margin-top: -10px;
+                                }
+
+                                .stats-row {
+                                    height: 175px;
+                                }
+
+                                .stats-row h4 {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        </style>
+
+                        <script>
+                            // Get the id of the <path> element and the length of <path>
+                            var line = document.getElementById("line");
+                            var length = line.getTotalLength();
+
+                            // The start position of the drawing
+                            line.style.strokeDasharray = length;
+
+                            // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+                            line.style.strokeDashoffset = length;
+
+                            // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+                            window.addEventListener("scroll", myFunction);
+
+                            function myFunction() {
+                                var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 15;
+
+                                var draw = length * scrollpercent;
+
+                                // Reverse the drawing (when scrolling upwards)
+                                line.style.strokeDashoffset = length - draw;
+                            }
+                        </script>
+
                     </div>
                 </div>
             </div>
@@ -536,30 +652,30 @@
 
 
     <!-- Statistics Start -->
-    <section class="container-fluid bg-primary-light" id="statistics">
-        <div class="container position-relative py-3">
-            <div class="row stats-row w-100 rounded-lg p-3">
-                <div class="stat-item col-lg-5 col-12 d-flex justify-content-center align-items-center p-3">
+    <section class="container-fluid bg-primary-light pt-5" id="statistics">
+        <div class="container d-flex position-relative pt-xl-5 pt-3">
+            <div class="row flex-fill stats-row w-100 rounded-lg p-3">
+                <div class="stat-item col-lg-5 col-12 d-flex justify-content-center align-items-center p-xxl-3">
                     <h4 class="mb-0 ps-4">
                         Our solutions are deployed at the largest venues, serving thousands of users.
                     </h4>
                 </div>
-                <div class="stat-item col-lg-3 col-6 d-flex justify-content-center align-items-center p-3">
+                <div class="stat-item col-lg-3 col-6 d-flex justify-content-center align-items-center p-xxl-3">
                     <div>
                         <strong class="">1,345,000</strong>
-                        <p><b>Square Feet</b><br>of area covered</p>
+                        <p class="mb-0"><b>Square Feet</b><br>of area covered</p>
                     </div>
                 </div>
-                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-3">
+                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-xxl-3">
                     <div>
                         <strong class="counter-value">14</strong>
-                        <p><b>Years</b><br>of experience</p>
+                        <p class="mb-0"><b>Years</b><br>of experience</p>
                     </div>
                 </div>
-                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-3">
+                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-xxl-3">
                     <div>
                         <strong class="counter-value">5</strong>
-                        <p><b>Global Offices</b><br>worldwide</p>
+                        <p class="mb-0"><b>Global Offices</b><br>worldwide</p>
                     </div>
                 </div>
             </div>

@@ -241,9 +241,7 @@
 }
 
 #intro .slider-wrapper {
-    height: 100vh;
-    padding-top: 160px !important;
-    overflow: hidden;
+    padding-top: 180px !important;
     background: rgb(243, 242, 233);
     background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(243, 242, 233, 1) 60%);
 }
@@ -1260,7 +1258,7 @@ h2 {
     display: block;
     position: absolute;
     color: #fdaa27;
-    background: linear-gradient(currentColor 50%, transparent 50%) top/2px 15px content-box repeat-y;
+    background: linear-gradient(currentColor 50%, transparent 50%) top/2px 2px content-box repeat-y;
     -webkit-mask: linear-gradient(#fdaa27, #fdaa27);
     -webkit-mask-size: 100% 0%;
     -webkit-mask-repeat: no-repeat;
@@ -1353,10 +1351,7 @@ h2 {
         text-transform: uppercase;
     }
 
-    .textwrapper {
-        min-height: calc(100vh - 160px);
-        top: -60px;
-    }
+    .textwrapper {}
 
     .videowrapper {}
 
