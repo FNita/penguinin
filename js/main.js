@@ -40,7 +40,7 @@
                 duration: 2000,
                 easing: jQuery.easeInQuad,
                 step: function (now) {
-                    $(this).text(Math.ceil(now));
+                    $(this).text(Math.ceil(now).toLocaleString('en'));
                 }
             });
         });
