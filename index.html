@@ -468,11 +468,11 @@
         <div class="slider-wrapper position-relative px-xl-5 px-4">
             <div class="container">
                 <div class="textwrapper row align-items-center">
-                    <div class="col-lg-5 ps-0 pe-5">
-                        <h2 class="fw-bold text-left mb-3 wow fadeInUp" style="font-size: 26px;">
-                            The leading provider of applicable location services.
+                    <div class="col-lg-6 ps-0 pe-5">
+                        <h2 class="fw-bold text-left mb-3 wow fadeInUp" style="font-size: 32px;">
+                            The leading provider<br>of applicable location services.
                         </h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">
+                        <p class="wow fadeInUp" data-wow-delay="0.2s" style="font-size: 18px;">
                             Facilitating digital transformation with IoT.<br>
                             Introducing intelligent facility applications for a streamlined experience. <span
                                 class="fw-bold">Simplified</span>.
@@ -501,7 +501,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 p-0 position-relative">
+                    <div class="col-lg-6 p-0 position-relative">
                         <div class="animated fadeIn">
                             <video autoplay loop muted class="w-100 rounded">
                                 <source src="img/video.mp4" type="video/mp4">
@@ -530,7 +530,7 @@
 
                             @media (min-width: 992px) {
                                 .svg-wrapper {
-                                    width: 700px;
+                                    width: 750px;
                                     height: auto;
                                     right: 50%;
                                     margin-top: 0;
@@ -556,10 +556,10 @@
 
                             @media (min-width: 1200px) {
                                 .svg-wrapper {
-                                    width: 830px;
+                                    width: 890px;
                                     height: auto;
                                     right: 50%;
-                                    margin-top: 0;
+                                    margin-top: -10px;
                                 }
 
                                 .stats-row {
@@ -582,10 +582,10 @@
 
                             @media (min-width: 1400px) {
                                 .svg-wrapper {
-                                    width: 970px;
+                                    width: 1030px;
                                     height: 1000px;
                                     right: 50%;
-                                    margin-top: -10px;
+                                    margin-top: -20px;
                                 }
 
                                 .stats-row {
@@ -672,7 +672,8 @@
                         <p class="mb-0"><b>Years</b><br>of experience</p>
                     </div>
                 </div>
-                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-xxl-3">
+                <div class="stat-item col-lg-2 col-6 d-flex justify-content-center align-items-center p-xxl-3"
+                    style="flex-grow: 1;">
                     <div>
                         <strong class="counter-value">5</strong>
                         <p class="mb-0"><b>Global Offices</b><br>worldwide</p>
@@ -810,13 +811,63 @@
     <section class="container-fluid py-5" id="industries">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 position-relative">
                     <h2 class="my-5 fs-5">
                         Who we serve
                         <div class="fs-3">
                             Check out our <span class="fw-bold">applications</span>
                         </div>
                     </h2>
+
+                    <div class="line2-wrapper">
+                        <svg id="mySVG2" viewBox="0 0 94 631" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="line2" d="M0.5 0V113H93.5L93.5 631" stroke="black" />
+                        </svg>
+                    </div>
+
+                    <style>
+                        .line2-wrapper {
+                            position: absolute;
+                        }
+
+                        #mySVG2 {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .line2-wrapper {
+                            width: 90px;
+                            height: 605px;
+                            left: -20px;
+                            top: 60px;
+                        }
+                    </style>
+
+                    <script>
+                        // Get the id of the <path> element and the length of <path>
+                        var line2 = document.getElementById("line2");
+                        var length2 = line2.getTotalLength();
+
+                        // The start position of the drawing
+                        line2.style.strokeDasharray = length2;
+
+                        // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+                        line2.style.strokeDashoffset = length2;
+
+                        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+                        window.addEventListener("scroll", myFunction2);
+
+                        function myFunction2() {
+                            var scrollpercent2 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 4;
+
+                            var draw2 = length2 * scrollpercent2;
+
+                            // Reverse the drawing (when scrolling upwards)
+                            line2.style.strokeDashoffset = length2 - draw2;
+                        }
+                    </script>
+
+
                 </div>
                 <div class="col-lg-9">
                     <div class="row g-lg-5 g-3">
