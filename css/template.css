@@ -1367,6 +1367,11 @@ h2 {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+
+    .testimonial .testimonial-content {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
 }
 
 @media (min-width: 1200px) {
