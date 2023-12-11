@@ -626,28 +626,29 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <style>
-        .mask {
-            -webkit-mask-image: url(img/blob2.svg);
-            -webkit-mask-position: center center;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 50%;
 
-            mask-image: url(/img/blob2.svg);
-            mask-position: center center;
-            mask-repeat: no-repeat;
-            mask-size: 50%;
-        }
-
-        @media (min-width: 992px) {
+        <style>
             .mask {
-                -webkit-mask-size: 73vh;
-                mask-size: 73vh;
+                -webkit-mask-image: url(img/blob2.svg);
+                -webkit-mask-position: center center;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-size: 50%;
+
+                mask-image: url(/img/blob2.svg);
+                mask-position: center center;
+                mask-repeat: no-repeat;
+                mask-size: 50%;
             }
-        }
-    </style>
+
+            @media (min-width: 992px) {
+                .mask {
+                    -webkit-mask-size: 73vh;
+                    mask-size: 73vh;
+                }
+            }
+        </style>
+    </section>
     <!-- Intro End -->
 
 
@@ -855,9 +856,9 @@
                         window.addEventListener("scroll", myFunction2);
 
                         function myFunction2() {
-                            var scrollpercent2 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 4;
+                            var scrollpercent2 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-                            var draw2 = length2 * scrollpercent2;
+                            var draw2 = length2 * scrollpercent2 * 11;
 
                             // Reverse the drawing (when scrolling upwards)
                             line2.style.strokeDashoffset = length2 - draw2;
