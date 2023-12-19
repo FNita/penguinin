@@ -1,11 +1,11 @@
 /*** Bootstrap Root Colors ***/
 :root {
-    --bs-primary: #fdaa27;
-    --bs-primary-rgb: 253, 170, 39;
-    --bs-primary-color: #E39923;
-    --bs-primary-color-rgb: 227, 153, 35;
-    --bs-primary-bg: #f3f2e9;
-    --bs-primary-bg-rgb: 254, 246, 233;
+    --bs-primary: #ffb400;
+    --bs-primary-rgb: 255, 180, 0;
+    --bs-primary-color: #eba600;
+    --bs-primary-color-rgb: 235, 166, 0;
+    --bs-primary-bg: #fff0c2;
+    --bs-primary-bg-rgb: 255, 240, 194;
 
     --bs-secondary: #1a1a1a;
     --bs-secondary-rgb: 26, 26, 26;

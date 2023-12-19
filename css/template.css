@@ -189,6 +189,18 @@
     margin-left: 10px;
 }
 
+a.btn i.fa-chevron-right {
+    transition: all 250ms ease-in-out;
+}
+
+a.btn:hover i.fa-chevron-right:nth-of-type(2) {
+    transform: translate(6px, 0);
+}
+
+a.btn:hover i.fa-chevron-right:nth-of-type(3) {
+    transform: translate(12px, 0);
+}
+
 .cornerfill {
     visibility: hidden;
     opacity: 0;
@@ -277,34 +289,6 @@
     height: 28px;
     overflow: hidden;
     display: inline-flex;
-}
-
-.link-container {
-    transition: transform .4s ease;
-}
-
-.linktitle {
-    display: block;
-    margin: 0;
-    padding-bottom: 0;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 500;
-    transition: transform .4s ease;
-}
-
-.link-container .link-title1 {
-    transform-origin: right center;
-}
-
-.link-container .link-title2 {
-    transform-origin: left center;
-    transform: rotate(0deg);
-}
-
-.btn:hover .link-container {
-    transform: translateY(-30px);
-    transition: transform .4s ease;
 }
 
 .btn-primary-hollow:hover {
@@ -562,14 +546,10 @@ a button {
     font-size: 14px;
     line-height: 1.2;
     height: 0;
-    visibility: hidden;
-    opacity: 0;
 }
 
 #industries a:hover p {
     height: auto;
-    visibility: visible;
-    opacity: 1;
 }
 
 #industries a:hover img {
@@ -612,6 +592,7 @@ a button {
     transform: rotate(3deg);
 }
 
+/*
 .cardslide:after {
     content: '';
     position: absolute;
@@ -627,7 +608,7 @@ a button {
     opacity: 0;
     transition-delay: 250ms;
 }
-
+*/
 
 
 /*** Case Studies ***/
@@ -690,7 +671,7 @@ a button {
 
 .owl-carousel .owl-nav {
     position: absolute;
-    top: -120px;
+    top: -60px;
     right: 0;
 }
 
@@ -1141,7 +1122,7 @@ a button {
 /*** General ***/
 
 .btn {
-    font-weight: 600;
+    font-weight: 500;
     transition: .5s;
 }
 
