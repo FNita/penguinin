@@ -56,7 +56,7 @@
     position: fixed;
     top: 0;
     margin-top: 0;
-    height: 80px;
+    height: 60px;
     width: 100%;
     box-shadow: 0 2px 5px rgba(61, 71, 80, .18);
 }
@@ -344,14 +344,6 @@
     animation-delay: 750ms !important;
 }
 
-#intro h2 {
-    font-size: 32px;
-}
-
-#intro p {
-    font-size: 18px;
-}
-
 .svg-wrapper {
     position: absolute;
     top: 100%;
@@ -418,8 +410,8 @@
 }
 
 #industries a img {
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
 }
 
 #industries a:hover {
@@ -574,7 +566,7 @@ a button {
     position: absolute;
     width: 85px;
     height: 605px;
-    left: -20px;
+    left: -10px;
     top: 80px;
 }
 
@@ -794,7 +786,7 @@ a button {
 #blog .article-wrapper:hover {
     background-color: var(--bs-secondary-bg);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-
+    z-index: 2;
 }
 
 #blog h4 {
@@ -814,7 +806,7 @@ a button {
     transform: translate(-50%, -50%);
     z-index: 3;
     transition: all 250ms ease-in-out;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #blog .article-wrapper:hover .readmore {
@@ -874,75 +866,6 @@ a button {
     max-width: 250px;
 }
 
-/***
-.triangle-wrapper {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.triangle {
-    position: absolute;
-    left: -80px;
-    top: -20px;
-    rotate: 30deg;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-right: 100px solid var(--bs-secondary);
-    border-bottom: 50px solid transparent;
-    animation: float 4s ease-in-out infinite;
-}
-
-.square {
-    position: absolute;
-    right: -80px;
-    bottom: 20px;
-    rotate: 30deg;
-    z-index: -1;
-    height: 100px;
-    width: 100px;
-    border: 4px solid var(--bs-secondary);
-    border-radius: 8px;
-    background-color: var(--bs-primary);
-    animation: float 5s ease-in-out infinite;
-}
-
-.circlediv {
-    position: absolute;
-    right: -80px;
-    top: 20px;
-    z-index: -1;
-    height: 40px;
-    width: 40px;
-    background-color: var(--bs-secondary);
-    border-radius: 50%;
-}
-
-.circlediv.left {
-    height: 30px;
-    width: 30px;
-    left: -70px;
-    top: 120px;
-    background-color: var(--bs-primary);
-}
-
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-20px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
-}
- ***/
-
 
 /*** Contact ***/
 
@@ -995,121 +918,98 @@ a button {
 }
 
 /*** Fancy checkbox ***/
-.checkbox-wrapper .cbx {
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    padding: 6px 8px;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-wrapper .cbx:hover {
-    color: #E39923;
-}
-
-.checkbox-wrapper .cbx span {
-    transform: translate3d(0, 0, 0);
-    font-size: 12px;
-}
-
-.checkbox-wrapper .cbx span:first-child {
-    position: relative;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    transform: scale(1);
-    border: 1px solid #cccfdb;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 1px rgba(0, 16, 75, 0.05);
-}
-
-.checkbox-wrapper .cbx span:first-child svg {
-    position: absolute;
-    top: 3px;
-    left: 2px;
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 16px;
-    stroke-dashoffset: 16px;
-    transition: all 0.3s ease;
-    transition-delay: 0.1s;
-    transform: translate3d(0, 0, 0);
-}
-
-.checkbox-wrapper .cbx span:last-child {
-    padding-left: 15px;
-    line-height: 18px;
-}
-
-.checkbox-wrapper .cbx:hover span:first-child {
-    border-color: #E39923;
-}
-
-.checkbox-wrapper .inp-cbx {
-    position: absolute;
-    visibility: hidden;
-}
-
-.checkbox-wrapper .inp-cbx:checked+.cbx span:first-child {
-    background: #E39923;
-    border-color: #E39923;
-    animation: wave-4 0.4s ease;
-}
-
-.checkbox-wrapper .inp-cbx:checked+.cbx span:first-child svg {
-    stroke-dashoffset: 0;
-}
-
-.checkbox-wrapper .inline-svg {
-    position: absolute;
-    width: 0;
+#contact input[type='checkbox'] {
     height: 0;
-    pointer-events: none;
-    user-select: none;
+    width: 0;
 }
 
-#fancycheckbox {
-    width: 12px;
-    height: 10px;
+#contact input[type='checkbox']+label {
+    position: relative;
+    display: flex;
+    margin: 12px 0;
+    align-items: center;
+    color: #000000;
+    transition: color 250ms cubic-bezier(.4, .0, .23, 1);
 }
 
-@media screen and (max-width: 640px) {
-    .checkbox-wrapper .cbx {
-        width: 100%;
-        display: inline-block;
+#contact input[type='checkbox']+label>span {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #9E9E9E;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+}
+
+#contact input[type='checkbox']+label:hover {
+    color: var(--bs-primary);
+    cursor: pointer;
+}
+
+#contact input[type='checkbox']+label:hover>span,
+#contact input[type='checkbox']:focus+label>span {
+    background: rgba(255, 255, 255, .1);
+}
+
+#contact input[type='checkbox']:checked+label>span {
+    border: 10px solid var(--bs-primary);
+    animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
+}
+
+#contact input[type='checkbox']:checked+label>span:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    animation: checkbox-check 125ms 250ms cubic-bezier(.4, .0, .23, 1) forwards;
+}
+
+@keyframes shrink-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(.85);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
-@-moz-keyframes wave-4 {
-    50% {
-        transform: scale(0.9);
+@keyframes checkbox-check {
+    0% {
+        width: 0;
+        height: 0;
+        border-color: #212121;
+        transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+
+    33% {
+        width: 6px;
+        height: 0;
+        transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+
+    100% {
+        width: 6px;
+        height: 12px;
+        border-color: #212121;
+        transform: translate3d(0, -10px, 0) rotate(45deg);
     }
 }
 
-@-webkit-keyframes wave-4 {
-    50% {
-        transform: scale(0.9);
-    }
-}
-
-@-o-keyframes wave-4 {
-    50% {
-        transform: scale(0.9);
-    }
-}
-
-@keyframes wave-4 {
-    50% {
-        transform: scale(0.9);
-    }
-}
 
 
 /*** Footer ***/
@@ -1143,6 +1043,7 @@ a button {
 .btn {
     font-weight: 400;
     transition: .5s;
+    font-size: 14px;
 }
 
 .btn-square {
@@ -1416,6 +1317,27 @@ h2 {
     #statistics p b {
         font-size: 18px;
     }
+
+    #industries a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #intro h2 {
+        font-size: 32px;
+    }
+
+    #intro p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .navbar.nav-sticky {
+        height: 80px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1453,6 +1375,10 @@ h2 {
 
     #statistics p b {
         font-size: 20px;
+    }
+
+    .readmore {
+        font-size: 14px;
     }
 }
 
@@ -1514,7 +1440,7 @@ h2 {
     #intro .slider-wrapper {
         height: auto;
         margin-top: 0 !important;
-        padding-top: 3rem !important;
+        padding-top: 1rem !important;
     }
 
     #intro .item {
@@ -1548,14 +1474,13 @@ h2 {
         flex-grow: 1;
     }
 
-    #industries a img {
-        width: 60px;
-        height: 60px;
-    }
-
     #testimonial-slider .owl-dots {
         width: 100%;
         padding-right: 0;
+        text-align: center;
+    }
+
+    #statistics {
         text-align: center;
     }
 }
@@ -1571,8 +1496,8 @@ h2 {
 
     #industries a:hover img {
         transform: none;
-        width: 60px;
-        height: 60px;
+        width: 48px;
+        height: 48px;
     }
 
     #industries a:hover .text-wrapper {

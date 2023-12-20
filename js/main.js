@@ -69,12 +69,14 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
-            $('.navbar').removeClass('with-announcement');
-            $('.navbar').addClass('nav-sticky animated slideInDown');
-        } else {
-            $('.navbar').removeClass('nav-sticky animated slideInDown');
-            $('.navbar').addClass('with-announcement');
+        if ($(window).width() >= 992) {
+            if ($(this).scrollTop() > 150) {
+                $('.navbar').removeClass('with-announcement');
+                $('.navbar').addClass('nav-sticky animated slideInDown');
+            } else {
+                $('.navbar').removeClass('nav-sticky animated slideInDown');
+                $('.navbar').addClass('with-announcement');
+            }
         }
     });
 
