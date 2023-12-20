@@ -72,11 +72,23 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- Announcement Banner Start -->
+    <section class="position-absolute bg-secondary text-center"
+        style="top:0;left:0;width: 100%; height: 40px; z-index: 10001;">
+        <div class="container">
+            <a href="#" target="_blank" class="text-white" style="width: 100%; line-height: 40px; display: block;">
+                <img src="img/icons/code.png" alt="Coding icon" height="24" class="me-1">
+                Try our Dev-Kit
+            </a>
+        </div>
+    </section>
+    <!-- Announcement Banner End -->
+
     <!-- Header Start -->
-    <header class="navbar navbar-expand-lg" id="navbar">
+    <header class="navbar navbar-expand-lg with-announcement" id="navbar">
         <div class="container p-0">
             <a href="index.html" class="navbar-brand">
-                <img src="img/Penguin_logo_new.svg" alt="">
+                <img src="img/Penguin_logo_new.svg" alt="Penguin Logo">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -399,12 +411,6 @@
                                 </li>
                                 <li class="col-4">
                                     <a class="dropdown-item rounded" href="#">
-                                        <img src="img/icons/code.png" alt="" height="24" class="me-2">
-                                        Try our Dev-Kit
-                                    </a>
-                                </li>
-                                <li class="col-4">
-                                    <a class="dropdown-item rounded" href="#">
                                         <img src="img/icons/calculator.png" alt="" height="24" class="me-2">
                                         ROI Calculator
                                     </a>
@@ -445,7 +451,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#" class="btn btn-primary text-secondary px-4 py-2 rounded-pill ms-3">Contact Us</a>
+                    <li>
+                        <a href="#"
+                            class="btn btn-primary text-secondary px-4 py-2 rounded-pill ms-3 position-relative">
+                            <span class="me-4">Contact Us</span>
+                            <span class="fa-chevron-right-group">
+                                <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                <i class="fa-solid fa-chevron-right position-absolute"></i>
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -560,7 +575,7 @@
                         location solutions</span>:
                 </h6>
                 <div class="row g-lg-5 g-4 justify-content-center">
-                    <div class="col-xl-4 col-md-6 d-flex wow fadeInUp">
+                    <div class="col-lg-4 col-md-6 d-flex wow fadeInUp">
                         <a href="#" class="row rounded-lg p-xxl-5 p-xl-4 p-3">
                             <div class="d-flex flex-column justify-content-between p-0 text-center">
                                 <div>
@@ -579,14 +594,19 @@
                                         even beyond campus boundaries.
                                     </div>
                                 </div>
-                                <button class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill">
-                                    Learn more
-                                    <i class="fa-solid fa-chevron-right ms-2"></i>
+                                <button
+                                    class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill position-relative">
+                                    <span class="me-4">Learn more</span>
+                                    <span class="fa-chevron-right-group">
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                    </span>
                                 </button>
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-md-6 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-6 d-flex wow fadeInUp" data-wow-delay="0.2s">
                         <a href="#" class="row rounded-lg p-xxl-5 p-xl-4  p-3">
                             <div class="d-flex flex-column justify-content-between p-0 text-center">
                                 <div>
@@ -607,14 +627,19 @@
                                         while enhancing performance.
                                     </div>
                                 </div>
-                                <button class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill">
-                                    Learn more
-                                    <i class="fa-solid fa-chevron-right ms-2"></i>
+                                <button
+                                    class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill position-relative">
+                                    <span class="me-4">Learn more</span>
+                                    <span class="fa-chevron-right-group">
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                    </span>
                                 </button>
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-md-6 d-flex wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-lg-4 col-md-6 d-flex wow fadeInUp" data-wow-delay="0.4s">
                         <a href="#" class="row rounded-lg p-xxl-5 p-xl-4 p-3">
                             <div class="d-flex flex-column justify-content-between p-0 text-center">
                                 <div>
@@ -632,9 +657,14 @@
                                         location services, emphasizing safety and security in vital applications.
                                     </div>
                                 </div>
-                                <button class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill">
-                                    Learn more
-                                    <i class="fa-solid fa-chevron-right ms-2"></i>
+                                <button
+                                    class="btn btn-primary text-secondary py-2 px-4 fw-normal rounded-pill position-relative">
+                                    <span class="me-4">Learn more</span>
+                                    <span class="fa-chevron-right-group">
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                    </span>
                                 </button>
                             </div>
                         </a>
@@ -993,9 +1023,14 @@
                         <i class="fa-solid fa-download fa-lg me-3"></i>
                         Download Brochure
                     </a>
-                    <a href="#" class="btn btn-primary text-secondary py-2 px-4 rounded-pill wow fadeInUp ms-3">
-                        <i class="fa-solid fa-cart-shopping fa-lg me-2"></i>
-                        Order Now!
+                    <a href="#"
+                        class="btn btn-primary text-secondary py-2 px-4 rounded-pill position-relative wow fadeInUp ms-3">
+                        <span class="me-4">Order Now</span>
+                        <span class="fa-chevron-right-group">
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -1286,8 +1321,13 @@
                                     </div>
                                 </div>
                                 <button type="submit"
-                                    class="btn btn-primary text-secondary py-2 px-4 fs-14 fw-normal ms-3 rounded-pill">
-                                    Subscribe
+                                    class="btn btn-primary text-secondary py-2 px-4 fs-14 fw-normal ms-3 rounded-pill position-relative">
+                                    <span class="me-4">Subscribe</span>
+                                    <span class="fa-chevron-right-group">
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                    </span>
                                 </button>
                             </div>
                         </form>
@@ -1322,9 +1362,13 @@
                     </div>
                 </div>
                 <div class="px-lg-5 px-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="#" class="btn btn-primary text-secondary py-2 px-4 rounded-pill">
-                        <i class="fa-solid fa-calculator fa-lg me-2"></i>
-                        Start Calculating
+                    <a href="#" class="btn btn-primary text-secondary py-2 px-4 rounded-pill position-relative">
+                        <span class="me-4">Start Calculating</span>
+                        <span class="fa-chevron-right-group">
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                            <i class="fa-solid fa-chevron-right position-absolute"></i>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -1419,9 +1463,13 @@
 
                             <div class="col-md-12 text-left mt-1 wow fadeInUp">
                                 <button type="submit"
-                                    class="btn btn-primary text-secondary fs-14 fw-normal rounded-pill py-2 px-4">
-                                    <i class="fa-regular fa-paper-plane fa-lg me-3"></i>
-                                    Send message
+                                    class="btn btn-primary text-secondary fs-14 fw-normal rounded-pill position-relative py-2 px-4">
+                                    <span class="me-4">Send message</span>
+                                    <span class="fa-chevron-right-group">
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                        <i class="fa-solid fa-chevron-right position-absolute"></i>
+                                    </span>
                                 </button>
                             </div>
 
