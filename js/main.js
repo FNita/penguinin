@@ -186,5 +186,93 @@
         });
     });
 
+
+    function drawLineIntro() {
+        // Get the id of the <path> element and the length of <path>
+        var line = document.getElementById("line");
+        var length = line.getTotalLength();
+
+        // The start position of the drawing
+        line.style.strokeDasharray = length;
+
+        // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+        line.style.strokeDashoffset = length;
+
+        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+        window.addEventListener("scroll", myFunction);
+
+        function myFunction() {
+            var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 15;
+
+            var draw = length * scrollpercent;
+
+            // Reverse the drawing (when scrolling upwards)
+            line.style.strokeDashoffset = length - draw;
+        }
+    }
+    drawLineIntro();
+
+
+    function drawLineApplication() {
+        // Get the id of the <path> element and the length of <path>
+        var line2 = document.getElementById("line2");
+        var length2 = line2.getTotalLength();
+
+        // The start position of the drawing
+        line2.style.strokeDasharray = length2;
+
+        // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+        line2.style.strokeDashoffset = length2;
+
+        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+        window.addEventListener("scroll", myFunction2);
+
+        function myFunction2() {
+            var scrollpercent2 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+            var draw2 = length2 * scrollpercent2 * 11;
+
+            // Reverse the drawing (when scrolling upwards)
+            line2.style.strokeDashoffset = length2 - draw2;
+        }
+    }
+    drawLineApplication();
+
+
+    function drawLineContact() {
+        // Get the id of the <path> element and the length of <path>
+        var line3 = document.getElementById("line3");
+        var length3 = line3.getTotalLength();
+
+        // The start position of the drawing
+        line3.style.strokeDasharray = length3;
+
+        // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+        line3.style.strokeDashoffset = length3;
+
+        // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+        window.addEventListener("scroll", myFunction3);
+
+        function myFunction3() {
+            var scrollpercent3 = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 10;
+
+            var draw3 = length3 * scrollpercent3;
+
+            var scrollpercentage = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            var pt = line3.getPointAtLength(scrollpercentage * length3);
+            var dot = document.getElementById("dot");
+            if (pt.y > 50) {
+                dot.style.opacity = "1";
+            } else {
+                dot.style.opacity = "0";
+            }
+
+            // Reverse the drawing (when scrolling upwards)
+            line3.style.strokeDashoffset = length3 - draw3;
+        }
+    }
+    drawLineContact();
+
+
 })(jQuery);
 
