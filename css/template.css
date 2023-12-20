@@ -28,8 +28,13 @@
 }
 
 .dropdown-item {
-    padding: 10px 20px;
+    padding: 5px 10px;
     color: #333333;
+    font-size: 14px;
+}
+
+.dropdown-item img {
+    display: none;
 }
 
 .dropdown-item:focus,
@@ -89,6 +94,10 @@
     max-width: 100%;
     max-height: 80px;
     height: 60px;
+}
+
+.navbar-nav {
+    align-items: flex-start;
 }
 
 .navbar-nav .nav-link,
@@ -596,12 +605,14 @@ a button {
     font-weight: 600;
     color: var(--bs-secondary);
     margin: 0;
+    text-align: start;
 }
 
 .testimonial .description {
     color: var(--bs-secondary);
     margin: 0;
     position: relative;
+    text-align: start;
 }
 
 #testimonial-slider .owl-dots {
@@ -625,11 +636,6 @@ a button {
     background: var(--bs-primary);
 }
 
-.testimonial .pic {
-    transform: translate(-70%, 0);
-    transition: transform 300ms ease-in-out;
-}
-
 .owl-item.active .testimonial .pic {
     transform: translate(0, 0);
 }
@@ -641,8 +647,8 @@ a button {
 }
 
 .owl-carousel .owl-nav button {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50px;
     background-color: black !important;
     margin-right: 10px;
@@ -669,6 +675,10 @@ a button {
     color: var(--bs-secondary);
 }
 
+#cases .case-logo {
+    max-width: 150px;
+    max-height: 30px;
+}
 
 /*** Product ***/
 
@@ -965,7 +975,7 @@ a button {
 #contact input[type='checkbox']:checked+label>span:before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 4px;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -1234,10 +1244,20 @@ h2 {
         max-height: 36px;
         max-width: 100px;
     }
+
+    header .btn,
+    main .btn {
+        width: 100% !important;
+    }
 }
 
 @media (min-width: 576px) {
+
     /*** Small  sm ***/
+    .owl-carousel .owl-nav button {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1338,6 +1358,24 @@ h2 {
     .navbar.nav-sticky {
         height: 80px;
     }
+
+    .dropdown-item {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .dropdown-item img {
+        display: inline-block;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .testimonial .pic {
+        transform: translate(-70%, 0);
+        transition: transform 300ms ease-in-out;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1420,7 +1458,7 @@ h2 {
     }
 
     .navbar .dropdown-menu {
-        box-shadow: none;
+        box-shadow: none !important;
     }
 
     .navbar .navbar-brand {
@@ -1433,7 +1471,7 @@ h2 {
 
     nav {
         background-color: rgb(255, 255, 255);
-        padding: 30px;
+        padding: 20px;
         width: 100%;
     }
 
@@ -1482,6 +1520,21 @@ h2 {
 
     #statistics {
         text-align: center;
+    }
+
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        border: none;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+
+    .navbar-collapse.show {
+        box-shadow: rgb(151, 150, 150) 0px 15px 10px -15px;
     }
 }
 
