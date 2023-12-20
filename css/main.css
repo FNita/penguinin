@@ -74,6 +74,10 @@ body {
     border-color: var(--bs-secondary-color) !important;
 }
 
+.bg-primary-superlight {
+    background-color: #fffaeb !important;
+}
+
 
 
 /*** Buttons ***/
