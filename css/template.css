@@ -904,13 +904,7 @@ a button {
     width: 4px;
     height: 100px;
     left: 100px;
-    top: -120px;
-}
-
-#mySVG3 {
-    width: 100%;
-    height: auto;
-    overflow: visible;
+    top: -150px;
 }
 
 .dot {
@@ -924,6 +918,17 @@ a button {
     background-color: black;
     z-index: 3;
     transition: opacity 200ms ease-in-out;
+}
+
+.dot.contact-dot {
+    bottom: -15px;
+    left: -3px
+}
+
+.dot.applications-dot {
+    bottom: 35px;
+    right: -5px;
+    left: auto;
 }
 
 /*** Fancy checkbox ***/
