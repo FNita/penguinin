@@ -913,14 +913,14 @@ a button {
     overflow: visible;
 }
 
-#dot {
+.dot {
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
-    bottom: -15px;
-    left: -3px;
+    bottom: -6px;
+    left: 7px;
     background-color: black;
     z-index: 3;
     transition: opacity 200ms ease-in-out;
@@ -1242,6 +1242,62 @@ h2 {
     left: 0;
 }
 
+.target-item h3 {
+    transition: all 250ms ease-in-out;
+    transform: translate(0, 0);
+}
+
+.target-item:hover h3 {
+    transform: translate(0, -6px);
+}
+
+.line4-wrapper {
+    position: absolute;
+    width: 4px;
+    height: 200px;
+    left: 100px;
+    top: 100%;
+}
+
+#mySVG4 {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.line5-wrapper {
+    position: absolute;
+    height: 137px;
+    width: 643px;
+    left: 25%;
+    top: -150px;
+}
+
+#mySVG5 {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.line5-wrapper .dot {
+    right: 7px !important;
+    left: auto;
+    bottom: -6px;
+}
+
+.line6-wrapper {
+    position: absolute;
+    height: 137px;
+    width: 643px;
+    left: 25%;
+    top: -150px;
+}
+
+.lineSVG {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
 
 
 /*** Responsiveness ***/
