@@ -379,7 +379,8 @@
     z-index: 2;
 }
 
-#statistics p b:after {
+#statistics p b:after,
+.underlined:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -1231,6 +1232,14 @@ h2 {
         -webkit-mask-position: bottom;
         mask-position: bottom;
     }
+}
+
+
+/*** PenTrack page ***/
+
+.target-item:hover .underlined:after {
+    width: 100%;
+    left: 0;
 }
 
 
