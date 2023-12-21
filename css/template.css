@@ -298,19 +298,6 @@
 #intro .slider-wrapper {
     padding-top: 180px !important;
     background-color: #ffffff;
-    /*
-    background: rgb(243, 242, 233);
-    background: linear-gradient(175deg, rgba(255, 255, 255, 1) 0%, rgba(243, 242, 233, 1) 60%);
-    */
-}
-
-.gradienttrans {
-    position: absolute;
-    left: -300px;
-    top: 0px;
-    width: 800px;
-    height: auto;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
 }
 
 #intro .textwrapper {
@@ -372,6 +359,10 @@
     z-index: 3;
 }
 
+.stats-row h2 {
+    font-size: 1.2rem;
+}
+
 #statistics strong {
     font-size: 32px;
 }
@@ -415,6 +406,10 @@
     position: relative;
     color: var(--bs-secondary);
     overflow: hidden;
+}
+
+#industries h3 {
+    font-size: 1.25rem;
 }
 
 #industries a img {
@@ -798,8 +793,12 @@ a button {
     z-index: 2;
 }
 
-#blog h4 {
+#blog h3 {
     font-size: 16px;
+}
+
+#blog h3.sub-title {
+    font-size: 1.5rem;
 }
 
 #blog .desc {
@@ -1320,7 +1319,7 @@ h2 {
         height: 120px;
     }
 
-    .stats-row h4 {
+    .stats-row h2 {
         font-size: 1.2rem;
     }
 
@@ -1397,7 +1396,7 @@ h2 {
         height: 140px;
     }
 
-    .stats-row h4 {
+    .stats-row h2 {
         font-size: 1.2rem;
     }
 
@@ -1435,7 +1434,7 @@ h2 {
         height: 175px;
     }
 
-    .stats-row h4 {
+    .stats-row h2 {
         font-size: 1.5rem;
     }
 }
