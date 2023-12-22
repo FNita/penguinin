@@ -293,7 +293,7 @@
 
 
 
-    function drawLine(lineID) {
+    function drawLine(lineID, comparedToDistance) {
 
         var line = document.getElementById(lineID);
 
@@ -314,7 +314,7 @@
 
                 var scrollpercent = 0;
 
-                if (windowHeight > distance && distance > -200) {
+                if (windowHeight > distance && distance > comparedToDistance) {
                     scrollpercent = 1 - distance / windowHeight;
                 }
 
@@ -338,12 +338,12 @@
             });
         }
     }
-    drawLine('lineIntro');
-    drawLine('lineApplications');
-    drawLine('lineContact');
-    drawLine('linePenTrack2');
-    drawLine('linePenTrack3');
-    drawLine('linePenTrack4');
+    drawLine('lineIntro', -300);
+    drawLine('lineApplications', -400);
+    drawLine('lineContact', -200);
+    drawLine('linePenTrack2', -200);
+    drawLine('linePenTrack3', -200);
+    drawLine('linePenTrack4', -200);
 
 })(jQuery);
 
