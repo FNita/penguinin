@@ -394,6 +394,10 @@
     z-index: 1;
 }
 
+#statistics p b:after {
+    background: #ffffff;
+}
+
 #statistics .stat-item:hover b:after {
     width: 100%;
     left: 0;
@@ -1281,6 +1285,20 @@ h2 {
     left: 25%;
     top: -150px;
 }
+
+
+/*** Solutions pages ***/
+
+.feature-item h3 {
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+    transform: translate(0, 0);
+}
+
+.feature-item:hover h3 {
+    transform: translate(0, -6px);
+}
+
 
 
 /*** Responsiveness ***/
