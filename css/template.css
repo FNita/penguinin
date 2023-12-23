@@ -395,7 +395,7 @@
 }
 
 #statistics p b:after {
-    background: #000;
+    background: #ffffff;
 }
 
 #statistics .stat-item:hover b:after {
