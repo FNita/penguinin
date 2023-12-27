@@ -346,6 +346,7 @@
     drawLine('linePenTrack4', -200);
     drawLine('lineIndoorIntro', -200);
     drawLine('lineIndoor2', -200);
+    drawLine('lineAssetIntro', -200);
 
 })(jQuery);
 
