@@ -864,7 +864,6 @@ a button {
 #calculate .container {
     z-index: 2;
     position: relative;
-    border-radius: 30px;
 }
 
 #calculate img {
