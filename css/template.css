@@ -509,17 +509,17 @@ a button {
 #industries a:hover img {
     width: 70px;
     height: 70px;
-    -webkit-transform: translate(0, -20px);
-    -ms-transform: translate(0, -20px);
-    -o-transform: translate(0, -20px);
-    transform: translate(0, -20px);
+    -webkit-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    transform: translate(0, -10px);
 }
 
 #industries a:hover .text-wrapper {
-    -webkit-transform: translate(0, -35px);
-    -ms-transform: translate(0, -35px);
-    -o-transform: translate(0, -35px);
-    transform: translate(0, -35px);
+    -webkit-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    transform: translate(0, -10px);
 }
 
 .cardslide {
@@ -865,7 +865,6 @@ a button {
     z-index: 2;
     position: relative;
     border-radius: 30px;
-    max-width: 900px;
 }
 
 #calculate img {
