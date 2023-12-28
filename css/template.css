@@ -487,11 +487,6 @@ a button {
     font-size: 14px;
 }
 
-#industries {
-    background: rgb(243, 242, 233);
-    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 15%);
-}
-
 #industries * {
     -webkit-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
@@ -679,10 +674,9 @@ a button {
 }
 
 /*** Product ***/
-
 #product {
-    background: rgb(255, 255, 255);
-
+    background: rgb(245, 245, 245);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 15%);
     overflow: hidden;
 }
 
