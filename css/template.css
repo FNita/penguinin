@@ -507,19 +507,19 @@ a button {
 }
 
 #industries a:hover img {
-    width: 70px;
-    height: 70px;
-    -webkit-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
-    -o-transform: translate(0, -10px);
-    transform: translate(0, -10px);
+    width: 110px;
+    height: 110px;
+    -webkit-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    -o-transform: translate(0, -5px);
+    transform: translate(0, -5px);
 }
 
 #industries a:hover .text-wrapper {
-    -webkit-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
-    -o-transform: translate(0, -10px);
-    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    -o-transform: translate(0, -5px);
+    transform: translate(0, -5px);
 }
 
 .cardslide {
@@ -867,7 +867,7 @@ a button {
 }
 
 #calculate img {
-    max-width: 250px;
+    max-width: 350px;
 }
 
 
@@ -1393,8 +1393,8 @@ h2 {
     }
 
     #industries a img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
 
     #intro h2 {
