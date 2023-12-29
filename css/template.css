@@ -412,13 +412,13 @@
     overflow: hidden;
 }
 
-#industries h3 {
-    font-size: 1.25rem;
+#industries a img {
+    width: 110px;
+    height: 110px;
 }
 
-#industries a img {
-    width: 48px;
-    height: 48px;
+#industries h3 {
+    font-size: 1.25rem;
 }
 
 #industries a:hover {
@@ -500,6 +500,10 @@ a button {
     font-size: 14px;
     line-height: 1.2;
     height: 0;
+    max-width: 230px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #industries a:hover p {
@@ -1304,6 +1308,24 @@ h2 {
     main .btn {
         width: 100% !important;
     }
+
+    #industries a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #industries h3 {
+        font-size: 1rem;
+    }
+
+    #industries a:hover img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    #industries a p {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -1620,12 +1642,14 @@ h2 {
         height: auto;
         visibility: visible;
         opacity: 1;
+        transform: none;
+        left: 0;
     }
 
     #industries a:hover img {
         transform: none;
-        width: 48px;
-        height: 48px;
+        width: 110px;
+        height: 110px;
     }
 
     #industries a:hover .text-wrapper {
