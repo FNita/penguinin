@@ -1309,6 +1309,10 @@ h2 {
     background: var(--bs-primary) !important;
 }
 
+i.mt-1 {
+    margin-top: 5px !important;
+}
+
 
 /*** Responsiveness ***/
 
@@ -1439,10 +1443,6 @@ h2 {
 
     #intro p {
         font-size: 18px;
-    }
-
-    .btn {
-        font-size: 16px;
     }
 
     .navbar.nav-sticky {
