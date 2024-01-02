@@ -292,61 +292,80 @@
            */
 
 
-
-    function drawLine(lineID, comparedToDistance) {
-
-        var line = document.getElementById(lineID);
-
-        if (typeof (line) != 'undefined' && line != null) {
-
-            var length = line.getTotalLength();
-
-            line.style.strokeDasharray = length;
-
-            line.style.strokeDashoffset = length;
-
-            $(window).on('scroll', function () {
-
-                var scrollTop = $(window).scrollTop(),
-                    elementOffset = $('#' + lineID).offset().top,
-                    windowHeight = $(window).height(),
-                    distance = (elementOffset - scrollTop);
-
-                var scrollpercent = 0;
-
-                if (windowHeight > distance && distance > comparedToDistance) {
-                    scrollpercent = 1 - distance / windowHeight;
-                }
-
-                var draw = length * scrollpercent * 1.5;
-
-                var dot = line.parentNode.nextElementSibling;
-
-                if (typeof (dot) != 'undefined' && dot != null) {
-                    if (dot.classList.contains('dot')) {
-
-                        if (draw >= length) {
-                            dot.style.opacity = "1";
-                        } else {
-                            dot.style.opacity = "0";
+    /*
+        function drawLine(lineID, comparedToDistance) {
+    
+            var line = document.getElementById(lineID);
+    
+            if (typeof (line) != 'undefined' && line != null) {
+    
+                var length = line.getTotalLength();
+    
+                line.style.strokeDasharray = length;
+    
+                line.style.strokeDashoffset = length;
+    
+                $(window).on('scroll', function () {
+    
+                    var scrollTop = $(window).scrollTop(),
+                        elementOffset = $('#' + lineID).offset().top,
+                        windowHeight = $(window).height(),
+                        distance = (elementOffset - scrollTop);
+    
+                    var scrollpercent = 0;
+    
+                    if (windowHeight > distance && distance > comparedToDistance) {
+                        scrollpercent = 1 - distance / windowHeight;
+                    }
+    
+                    var draw = length * scrollpercent * 1.5;
+    
+                    var dot = line.parentNode.nextElementSibling;
+    
+                    if (typeof (dot) != 'undefined' && dot != null) {
+                        if (dot.classList.contains('dot')) {
+    
+                            if (draw >= length) {
+                                dot.style.opacity = "1";
+                            } else {
+                                dot.style.opacity = "0";
+                            }
                         }
                     }
-                }
-
-                // Reverse the drawing (when scrolling upwards)
-                line.style.strokeDashoffset = length - draw;
-            });
+    
+                    // Reverse the drawing (when scrolling upwards)
+                    line.style.strokeDashoffset = length - draw;
+                });
+            }
         }
-    }
-    drawLine('lineIntro', -300);
-    drawLine('lineApplications', -400);
-    drawLine('lineContact', -200);
-    drawLine('linePenTrack2', -200);
-    drawLine('linePenTrack3', -200);
-    drawLine('linePenTrack4', -200);
-    drawLine('lineIndoorIntro', -200);
-    drawLine('lineIndoor2', -200);
-    drawLine('lineAssetIntro', -200);
+        drawLine('lineIntro', -300);
+        drawLine('lineApplications', -400);
+        drawLine('lineContact', -200);
+        drawLine('linePenTrack2', -200);
+        drawLine('linePenTrack3', -200);
+        drawLine('linePenTrack4', -200);
+        drawLine('lineIndoorIntro', -200);
+        drawLine('lineIndoor2', -200);
+        drawLine('lineAssetIntro', -200);
+    
+        */
+
+
+    $('.owl-carousel.healthcare-carousel').owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        animateIn: 'slideInRight',
+        animateOut: 'slideOutLeft',
+        loop: true,
+        nav: false,
+        navText: false,
+        dots: true,
+        mouseDrag: true,
+        margin: 10,
+        navigation: true,
+        slideBy: 1,
+        items: 1,
+    })
 
 })(jQuery);
 

@@ -1294,6 +1294,20 @@ h2 {
     transform: translate(0, -6px);
 }
 
+.healthcare-carousel .owl-dot {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: var(--bs-secondary) !important;
+    border: none;
+}
+
+.healthcare-carousel .owl-dot.active,
+.healthcare-carousel .owl-dot:hover {
+    background: var(--bs-primary) !important;
+}
 
 
 /*** Responsiveness ***/
