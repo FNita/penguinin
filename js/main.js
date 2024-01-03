@@ -86,7 +86,7 @@
     var mainOwl = $('.owl-carousel.main-carousel');
     mainOwl.owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 2500,
         animateIn: 'fadeIn',
         animateOut: '',
         loop: true,
