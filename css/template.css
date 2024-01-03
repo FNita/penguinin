@@ -1395,10 +1395,6 @@ i.mt-1 {
         margin-top: 0;
     }
 
-    .stats-row {
-        height: 120px;
-    }
-
     .stats-row h2 {
         font-size: 1.2rem;
     }
@@ -1479,10 +1475,6 @@ i.mt-1 {
         margin-top: -10px;
     }
 
-    .stats-row {
-        height: 140px;
-    }
-
     .stats-row h2 {
         font-size: 1.2rem;
     }
@@ -1520,10 +1512,6 @@ i.mt-1 {
         height: 1000px;
         right: 50%;
         margin-top: -20px;
-    }
-
-    .stats-row {
-        height: 175px;
     }
 
     .stats-row h2 {
