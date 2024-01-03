@@ -131,7 +131,7 @@
         loop: false,
         margin: 10,
         nav: true,
-        navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+        navText: ['<i class="fa-solid fa-chevron-left fa-xl"></i>', '<i class="fa-solid fa-chevron-right fa-xl"></i>'],
         responsiveClass: true,
         responsive: {
             0: {
