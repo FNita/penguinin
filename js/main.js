@@ -94,7 +94,7 @@
         navText: false,
         dots: false,
         mouseDrag: false,
-        margin: 10,
+        margin: 0,
         navigation: true,
         slideBy: 1,
         items: 1,
