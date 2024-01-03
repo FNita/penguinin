@@ -86,14 +86,14 @@
     var mainOwl = $('.owl-carousel.main-carousel');
     mainOwl.owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
-        animateIn: 'fadeInDown',
+        smartSpeed: 1500,
+        animateIn: 'fadeIn',
         animateOut: '',
         loop: true,
         nav: false,
         navText: false,
         dots: false,
-        mouseDrag: true,
+        mouseDrag: false,
         margin: 10,
         navigation: true,
         slideBy: 1,
@@ -106,17 +106,23 @@
             .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                 $('.animdown', el).removeClass('animated fadeInDown delay-250ms');
             });
-        $('.animup', el).addClass('animated fadeInUp delay-250ms')
-            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('.animup', el).removeClass('animated fadeInUp delay-250ms');
-            });
-        $('.animupslow', el).addClass('animated fadeInUp delay-500ms')
-            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $('.animupslow', el).removeClass('animated fadeInUp delay-500ms');
-            });
         $('.animfade', el).addClass('animated fadeIn delay-250ms')
             .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                 $('.animfade', el).removeClass('animated fadeIn delay-250ms');
+            });
+
+
+        $('.animup', el).addClass('animated fadeInUp')
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('.animup', el).removeClass('animated fadeInUp');
+            });
+        $('.animup250', el).addClass('animated fadeInUp delay-250ms')
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('.animup250', el).removeClass('animated fadeInUp delay-250ms');
+            });
+        $('.animup500', el).addClass('animated fadeInUp delay-500ms')
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $('.animup500', el).removeClass('animated fadeInUp delay-500ms');
             });
     });
 
