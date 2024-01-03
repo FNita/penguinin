@@ -92,7 +92,7 @@
         loop: true,
         nav: false,
         navText: false,
-        dots: false,
+        dots: true,
         mouseDrag: false,
         margin: 0,
         navigation: true,
