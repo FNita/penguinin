@@ -421,11 +421,6 @@
     font-size: 1.25rem;
 }
 
-#industries a:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
-
-}
-
 #solutions a *,
 #industries a * {
     z-index: 2;
@@ -441,7 +436,7 @@
 }
 
 #solutions a:hover {
-    background-color: #fffaeb;
+    background-color: #fff;
 }
 
 #solutions a .app-logo-wrapper {
@@ -495,15 +490,10 @@ a button {
 }
 
 #industries a p {
-    position: absolute;
-    top: 35px;
     font-size: 14px;
     line-height: 1.2;
-    height: 0;
     max-width: 230px;
     margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 #industries a:hover p {
@@ -511,19 +501,10 @@ a button {
 }
 
 #industries a:hover img {
-    width: 110px;
-    height: 110px;
-    -webkit-transform: translate(0, -5px);
-    -ms-transform: translate(0, -5px);
-    -o-transform: translate(0, -5px);
-    transform: translate(0, -5px);
-}
-
-#industries a:hover .text-wrapper {
-    -webkit-transform: translate(0, -5px);
-    -ms-transform: translate(0, -5px);
-    -o-transform: translate(0, -5px);
-    transform: translate(0, -5px);
+    -webkit-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    transform: translate(0, -10px);
 }
 
 .cardslide {
@@ -594,7 +575,7 @@ a button {
     width: 100%;
     max-height: 400px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 .testimonial .title {
@@ -646,7 +627,7 @@ a button {
 .owl-carousel .owl-nav button {
     width: 32px;
     height: 32px;
-    border-radius: 50px;
+    border-radius: 4px;
     background-color: black !important;
     margin-right: 10px;
     box-shadow: none !important;
@@ -679,8 +660,6 @@ a button {
 
 /*** Product ***/
 #product {
-    background: rgb(245, 245, 245);
-    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 15%);
     overflow: hidden;
 }
 
@@ -721,18 +700,18 @@ a button {
 /*** Partners ***/
 
 #partners {
-    background: #fffaeb;
+    background: #fff;
 }
 
 #partners .partners-list a {
     aspect-ratio: 5 / 2;
     border-radius: 0;
-    background-color: #fffff5;
+    background-color: #ffffff;
     transition: all 250ms ease-in-out;
 }
 
 #partners .partners-list a:hover {
-    background-color: #fffff5;
+    background-color: #ffffff;
     -webkit-box-shadow: inset 0px -4px 0px 0px var(--bs-primary);
     -moz-box-shadow: inset 0px -4px 0px 0px var(--bs-primary);
     box-shadow: inset 0px -4px 0px 0px var(--bs-primary);
@@ -769,6 +748,7 @@ a button {
     width: 100%;
     height: auto;
     max-height: 100%;
+    max-width: 150px;
 }
 
 /*** Blog ***/
@@ -781,17 +761,17 @@ a button {
 }
 
 #blog img {
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 #blog .article-wrapper {
-    border-radius: 12px;
+    border-radius: 4px;
     transition: all 250ms ease-in-out;
 }
 
 #blog .article-wrapper:hover {
     background-color: var(--bs-secondary-bg);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .05);
     z-index: 2;
 }
 
@@ -831,7 +811,7 @@ a button {
     right: 0;
     top: 0;
     bottom: 0;
-    border-radius: 8px;
+    border-radius: 4px;
     z-index: 2;
     transition: all 250ms ease-in-out;
 }
@@ -860,14 +840,11 @@ a button {
 
 
 /*** Calculate ***/
-#calculate {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(236, 236, 236, 1) 60%);
-}
 
 #calculate .container {
     z-index: 2;
     position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
 }
 
 #calculate img {
@@ -879,6 +856,7 @@ a button {
 
 #contact .form-control {
     font-size: 14px;
+    background-color: var(--bs-secondary-bg);
 }
 
 #contact input.form-control {
@@ -888,10 +866,11 @@ a button {
 
 #contact textarea {
     border: 0;
+    background-color: var(--bs-secondary-bg);
 }
 
 #contact .input-group-text {
-    background-color: #fff;
+    background-color: var(--bs-secondary-bg);
     border: 0;
     width: 60px;
     display: flex;
@@ -1125,6 +1104,11 @@ h2 {
 
 .flex-column {
     flex-direction: column;
+}
+
+.rounded,
+.btn {
+    border-radius: 4px !important;
 }
 
 @keyframes fadeInDown {
