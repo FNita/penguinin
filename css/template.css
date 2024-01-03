@@ -377,7 +377,6 @@
     z-index: 2;
 }
 
-#statistics p b:after,
 .underlined:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -392,13 +391,14 @@
     z-index: 1;
 }
 
-#statistics p b:after {
-    background: #ffffff;
+#statistics .stat-item strong {
+    transform: translate(0, 5px);
+    transition: all 250ms ease-in-out;
+    display: block;
 }
 
-#statistics .stat-item:hover b:after {
-    width: 100%;
-    left: 0;
+#statistics .stat-item:hover strong {
+    transform: translate(0, 0);
 }
 
 
