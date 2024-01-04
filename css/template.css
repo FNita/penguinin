@@ -806,6 +806,20 @@ a button {
     opacity: 0.8;
 }
 
+.blog-label {
+    top: -20px;
+    left: 15px;
+    z-index: 3;
+    font-size: 12px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    transform: translate(0, 0);
+    transition: all 250ms ease-in-out;
+}
+
+#blog .article-wrapper:hover .blog-label {
+    transform: translate(0, 5px);
+}
+
 .readmore {
     visibility: hidden;
     opacity: 0;
