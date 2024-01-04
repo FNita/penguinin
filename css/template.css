@@ -288,20 +288,12 @@
 
 /*** Intro ***/
 
-.theonewrapper {
-    /*
-    background: rgb(243, 242, 233);
-    background: radial-gradient(circle at right center, rgba(255, 241, 210, 1) 0%, rgba(243, 242, 233, 1) 32%);
-    */
-}
-
 #intro .slider-wrapper {
     padding-top: 180px !important;
 }
 
-#intro .textwrapper {
-    z-index: 2;
-    position: relative;
+#intro p {
+    max-width: 450px;
 }
 
 .videowrapper {
