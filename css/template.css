@@ -882,7 +882,6 @@ a button {
     height: 44px;
     border: 0;
     border-radius: 4px;
-    padding-left: 0;
 }
 
 #contact textarea {
@@ -893,10 +892,11 @@ a button {
 #contact .input-group-text {
     background-color: var(--bs-secondary-bg);
     border: 0;
-    width: 60px;
+    width: 50px;
     display: flex;
     justify-content: center;
     border-radius: 4px;
+    margin-right: 10px;
 }
 
 .line3-wrapper {
