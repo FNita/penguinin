@@ -1325,6 +1325,32 @@ i.mt-1 {
 }
 
 
+/*** Blog ***/
+
+.pagenav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-secondary);
+    margin-right: 0.5rem;
+    transition: all 250ms ease-in-out;
+}
+
+.pagenav a:last-of-type {
+    margin-right: 0;
+}
+
+.pagenav a:hover,
+.pagenav a:active,
+.pagenav a.active {
+    background-color: var(--bs-primary);
+}
+
+
 /*** Responsiveness ***/
 
 @media (max-width: 450px) {
