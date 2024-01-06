@@ -768,6 +768,8 @@ a button {
 
 #blog img {
     border-radius: 4px;
+    position: relative;
+    z-index: 5;
 }
 
 #blog .article-wrapper {
@@ -798,17 +800,23 @@ a button {
 }
 
 .blog-label {
-    top: -20px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    top: -25px;
     left: 15px;
     z-index: 3;
-    font-size: 12px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
     transform: translate(0, 0);
     transition: all 250ms ease-in-out;
 }
 
 #blog .article-wrapper:hover .blog-label {
-    transform: translate(0, 5px);
+    padding-top: 10px;
+    transform: translate(0, -10px);
 }
 
 .readmore {
