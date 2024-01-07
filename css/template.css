@@ -1404,6 +1404,13 @@ i.mt-1 {
 
 .content h3 {
     margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.content ol,
+.content ul {
+    padding-left: 5rem;
+    font-size: 1.2rem;
 }
 
 #single a {
