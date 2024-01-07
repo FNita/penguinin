@@ -1359,6 +1359,20 @@ i.mt-1 {
 }
 
 
+/*** Library ***/
+
+.library-label {
+    bottom: 100%;
+    left: 1rem;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
 /*** Responsiveness ***/
 
 @media (max-width: 450px) {
