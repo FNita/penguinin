@@ -457,6 +457,7 @@
 
 #solutions a p {
     text-align: left;
+    line-height: 1.7;
 }
 
 .a-bg {
@@ -769,7 +770,6 @@ a button {
 #blog img {
     border-radius: 4px;
     position: relative;
-    z-index: 5;
 }
 
 #blog .article-wrapper {
@@ -1453,7 +1453,7 @@ i.mt-1 {
     }
 
     #solutions a img {
-        height: 160px;
+        height: 200px;
         width: auto;
     }
 
