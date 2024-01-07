@@ -1402,6 +1402,14 @@ i.mt-1 {
     margin-bottom: 1.5rem;
 }
 
+.content h5 {
+    font-size: 1.3rem;
+}
+
+.content h6 {
+    font-size: 1.2rem;
+}
+
 .content h3,
 .content h4,
 .content h5,
