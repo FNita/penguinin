@@ -1400,8 +1400,7 @@ i.mt-1 {
     margin-bottom: 1rem;
 }
 
-.content a,
-.title-meta a {
+#single a {
     color: var(--bs-secondary);
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -1409,8 +1408,7 @@ i.mt-1 {
     transition: all 250ms ease-in-out;
 }
 
-.content a:hover,
-.title-meta a:hover {
+#single a:hover {
     color: var(--bs-primary-color);
 }
 
@@ -1418,12 +1416,17 @@ i.mt-1 {
     margin-bottom: 3rem;
 }
 
+#single .related-posts a,
+#single .related-bottom a {
+    text-decoration: none !important;
+}
+
 .sidebar .related-posts {
     position: sticky;
     top: 90px;
 }
 
-.sidebar .related-posts .image-wrapper {
+#single .related-posts .image-wrapper {
     border-radius: 2px;
     width: 150px;
     height: 100px;
@@ -1431,14 +1434,28 @@ i.mt-1 {
     flex-shrink: 0;
 }
 
-.sidebar .related-posts .image-wrapper img {
+#single .related-posts .image-wrapper img {
     width: 150px;
     height: 100px;
     object-fit: cover;
     transition: all 250ms ease-in-out;
 }
 
-.sidebar .related-posts a:hover .image-wrapper img {
+#single .related-bottom .image-wrapper {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#single .related-bottom .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 250ms ease-in-out;
+}
+
+#single a:hover .image-wrapper img {
     scale: 1.1;
 }
 
