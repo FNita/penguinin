@@ -1372,6 +1372,57 @@ i.mt-1 {
     border-radius: 2px;
 }
 
+/*** Single ***/
+
+.content>* {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.content img {
+    padding: 0;
+    border-radius: 4px;
+}
+
+.content p {
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+#single .title-meta {
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    letter-spacing: normal;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content a,
+.title-meta a {
+    color: var(--bs-secondary);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--bs-primary-color);
+}
+
+.content a:hover,
+.title-meta a:hover {
+    color: var(--bs-primary-color);
+}
+
+#single .featured-image {
+    margin-bottom: 3rem;
+}
+
+.sidebar .related-posts img {
+    border-radius: 2px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
 
 /*** Responsiveness ***/
 
