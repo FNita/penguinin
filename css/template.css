@@ -1406,6 +1406,7 @@ i.mt-1 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: var(--bs-primary-color);
+    transition: all 250ms ease-in-out;
 }
 
 .content a:hover,
@@ -1417,11 +1418,37 @@ i.mt-1 {
     margin-bottom: 3rem;
 }
 
-.sidebar .related-posts img {
+.sidebar .related-posts {
+    position: sticky;
+    top: 90px;
+}
+
+.sidebar .related-posts .image-wrapper {
     border-radius: 2px;
     width: 150px;
     height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.sidebar .related-posts .image-wrapper img {
+    width: 150px;
+    height: 100px;
     object-fit: cover;
+    transition: all 250ms ease-in-out;
+}
+
+.sidebar .related-posts a:hover .image-wrapper img {
+    scale: 1.1;
+}
+
+.sidebar .related-posts a {
+    color: var(--bs-secondary);
+    transition: all 250ms ease-in-out;
+}
+
+.sidebar .related-posts a:hover {
+    color: var(--bs-primary-color);
 }
 
 /*** Responsiveness ***/
