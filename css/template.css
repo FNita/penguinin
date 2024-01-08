@@ -1559,16 +1559,26 @@ i.mt-1 {
 
 /*** Job ***/
 
+.breadcrumbs a {
+    color: var(--bs-secondary);
+    background-color: var(--bs-secondary-bg);
+    padding: 5px 10px;
+}
+
+.breadcrumbs a:hover {
+    color: var(--bs-primary-color);
+}
+
+#job h3 {
+    padding-top: 3rem;
+    border-top: 1px solid var(--bs-secondary-bg);
+    margin-top: 3rem;
+}
+
 #job ul li {
-    list-style: none;
-    margin-bottom: 0.8rem;
+    list-style-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+    margin-bottom: 0.5rem;
 }
-
-#jobul ul li::before {
-    content: "\f054";
-    font: var(--fa-font-solid);
-}
-
 
 
 /*** Responsiveness ***/
