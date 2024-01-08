@@ -1522,6 +1522,48 @@ i.mt-1 {
     color: var(--bs-primary-color);
 }
 
+
+/*** Careers ***/
+#careers .scrollable-block {
+    overflow-y: scroll;
+    max-height: 170px;
+}
+
+
+
+/* Firefox */
+.scrollable-block {
+    scrollbar-width: thick;
+    /* none | auto  */
+    scrollbar-color: var(--bs-primary-color) var(--bs-secondary-bg);
+}
+
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+.scrollable-block::-webkit-scrollbar {
+    width: 4px;
+    /* vertical scrollbar */
+}
+
+.scrollable-block::-webkit-scrollbar-track {
+    background: var(--bs-secondary-bg);
+}
+
+.scrollable-block::-webkit-scrollbar-thumb {
+    background: var(--bs-primary-color);
+    border-radius: 5px;
+}
+
+.scrollable-block::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary);
+}
+
+/* Chrome, Edge, Safari */
+
+
+
+
 /*** Responsiveness ***/
 
 @media (max-width: 450px) {
