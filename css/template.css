@@ -952,7 +952,7 @@ input[type='checkbox']+label>span {
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 20px;
     height: 20px;
     background: transparent;
