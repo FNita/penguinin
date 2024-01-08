@@ -933,21 +933,21 @@ a button {
 
 
 /*** Fancy checkbox ***/
-#contact input[type='checkbox'] {
+input[type='checkbox'] {
     height: 0;
     width: 0;
 }
 
-#contact input[type='checkbox']+label {
+input[type='checkbox']+label {
     position: relative;
     display: flex;
-    margin: 12px 0;
+    margin: 5px 0;
     align-items: center;
     color: #000000;
     transition: color 250ms cubic-bezier(.4, .0, .23, 1);
 }
 
-#contact input[type='checkbox']+label>span {
+input[type='checkbox']+label>span {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -962,22 +962,22 @@ a button {
     transition: all 250ms cubic-bezier(.4, .0, .23, 1);
 }
 
-#contact input[type='checkbox']+label:hover {
-    color: var(--bs-primary);
+input[type='checkbox']+label:hover {
+    color: var(--bs-primary-dark);
     cursor: pointer;
 }
 
-#contact input[type='checkbox']+label:hover>span,
-#contact input[type='checkbox']:focus+label>span {
+input[type='checkbox']+label:hover>span,
+input[type='checkbox']:focus+label>span {
     background: rgba(255, 255, 255, .1);
 }
 
-#contact input[type='checkbox']:checked+label>span {
+input[type='checkbox']:checked+label>span {
     border: 10px solid var(--bs-primary);
     animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
 }
 
-#contact input[type='checkbox']:checked+label>span:before {
+input[type='checkbox']:checked+label>span:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1126,7 +1126,11 @@ h2 {
 }
 
 .mb-45 {
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.p-45 {
+    padding: 2rem !important;
 }
 
 .flex-column {
@@ -1716,6 +1720,10 @@ i.mt-1 {
         text-align: center;
         width: 50%;
         float: right;
+    }
+
+    .p-lg-45 {
+        padding: 2rem !important;
     }
 }
 
