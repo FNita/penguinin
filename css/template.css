@@ -1588,6 +1588,21 @@ i.mt-1 {
 }
 
 
+/*** News ***/
+
+.news #intro .heading a {
+    color: var(--bs-secondary);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--bs-primary-color);
+    transition: all 250ms ease-in-out;
+}
+
+.news #intro .heading a:hover {
+    color: var(--bs-primary-color);
+}
+
+
 /*** Responsiveness ***/
 
 @media (max-width: 450px) {
